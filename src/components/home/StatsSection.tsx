@@ -1,8 +1,8 @@
 const stats = [
-  { number: "56+", label: "Projects Delivered" },
-  { number: "198+", label: "Interview Hours" },
-  { number: "12", label: "Team Members" },
-  { number: "30k+", label: "Cups of Coffee" },
+  { number: "500+", label: "Researchers Trained" },
+  { number: "120+", label: "Institutions Served" },
+  { number: "25", label: "Expert Consultants" },
+  { number: "15+", label: "Years of Excellence" },
 ];
 
 const StatsSection = () => {
@@ -10,7 +10,7 @@ const StatsSection = () => {
     <section className="py-20 lg:py-32">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-center text-sm font-medium uppercase tracking-wider text-muted-foreground mb-16">
-          Our journey thus far
+          Our Impact
         </h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
           {stats.map((stat) => (

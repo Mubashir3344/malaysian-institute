@@ -8,10 +8,10 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Work", href: "/work" },
+    { name: "Research", href: "/work" },
     { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
+    { name: "Insights", href: "/blog" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -21,8 +21,8 @@ const Header = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-serif tracking-tight">
-            Psykhe
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-2xl font-serif tracking-tight font-bold">SIAA</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -43,7 +43,7 @@ const Header = () => {
           {/* Contact Button */}
           <div className="hidden md:block">
             <Button asChild variant="outline" className="border-foreground hover:bg-foreground hover:text-background">
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>
 
@@ -76,7 +76,7 @@ const Header = () => {
                 className="text-lg font-medium py-2 mt-4 border-t border-border pt-6"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact Us
+                Get in Touch
               </Link>
             </nav>
           </div>

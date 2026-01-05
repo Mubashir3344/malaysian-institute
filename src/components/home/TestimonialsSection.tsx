@@ -3,19 +3,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Psykhe brought a fresh perspective to our digital transformation. Their human-centric approach helped us truly understand our customers.",
-    author: "Sarah Chen",
-    role: "Head of Digital, Major Bank",
+    quote: "SIAA's research integrity training transformed how our faculty approaches ethical research. Their expertise is unmatched in the region.",
+    author: "Prof. David Lim",
+    role: "Dean of Research, National University",
   },
   {
-    quote: "The team's ability to blend strategic thinking with beautiful design execution is remarkable. They've become our go-to partner for all things UX.",
-    author: "Michael Tan",
-    role: "VP Product, Healthcare Tech",
+    quote: "The analytics support we received from SIAA significantly improved our research outcomes. Their methodological guidance was invaluable.",
+    author: "Dr. Priya Sharma",
+    role: "Research Director, Institute of Technology",
   },
   {
-    quote: "Working with Psykhe was transformative. They didn't just design a product; they helped us reimagine our entire customer journey.",
-    author: "Amanda Lee",
-    role: "Director of Innovation, Hospitality Group",
+    quote: "Working with SIAA elevated our institution's research standards. Their comprehensive approach to integrity assurance is exactly what we needed.",
+    author: "Prof. Lisa Wong",
+    role: "Vice Provost, Regional University",
   },
 ];
 
