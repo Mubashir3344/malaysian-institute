@@ -25,10 +25,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-center mb-4">
-            Have a project in <em className="italic">mind</em>?
+            Have a research <em className="italic">challenge</em>?
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Let's discuss how we can help transform your business.
+            Let's discuss how SIAA can support your academic and research needs.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">

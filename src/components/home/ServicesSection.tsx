@@ -3,24 +3,24 @@ import { ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "Research & Insights",
-    description: "Understand user motivations through our data-driven approach",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+    title: "Research Support",
+    description: "Comprehensive methodology and analytical support for your research",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop",
   },
   {
-    title: "Strategy & Innovation",
-    description: "Map out the blueprint for your next big idea",
+    title: "Integrity Assurance",
+    description: "Ensuring the highest standards of academic integrity and ethics",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",
+  },
+  {
+    title: "Professional Training",
+    description: "Skill development programs for researchers and academics",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop",
+  },
+  {
+    title: "Institutional Consulting",
+    description: "Strategic support for academic institutions and research centers",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-  },
-  {
-    title: "Product Design",
-    description: "Transform ambitious ideas into engaging experiences",
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=600&fit=crop",
-  },
-  {
-    title: "Development & Delivery",
-    description: "Bring your vision to life with cutting-edge technology",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
   },
 ];
 
@@ -31,11 +31,11 @@ const ServicesSection = () => {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4">
-              What we <em className="italic">do</em>
+              What we <em className="italic">offer</em>
             </h2>
             <p className="text-muted-foreground text-lg max-w-xl">
-              We help transform businesses in Asia through a 3-step approach – 
-              research, innovation and design.
+              We support academic excellence through research, training, and 
+              integrity assurance services.
             </p>
           </div>
           <Link 

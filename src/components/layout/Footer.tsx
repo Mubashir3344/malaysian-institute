@@ -7,12 +7,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Logo & Tagline */}
           <div className="md:col-span-2">
-            <Link to="/" className="text-3xl font-serif tracking-tight">
-              Psykhe
+            <Link to="/" className="text-3xl font-serif tracking-tight font-bold">
+              SIAA
             </Link>
             <p className="mt-4 text-background/70 max-w-md leading-relaxed">
-              Singapore's leading strategic design consultancy. We create outstanding 
-              customer experiences through human-centric design.
+              Singapore Institute of Academic Analytics — Your trusted partner in 
+              academic research, integrity assurance, and professional training.
             </p>
           </div>
 
@@ -23,7 +23,7 @@ const Footer = () => {
             </h4>
             <nav className="flex flex-col gap-3">
               <Link to="/work" className="text-background/80 hover:text-background transition-colors">
-                Work
+                Research
               </Link>
               <Link to="/services" className="text-background/80 hover:text-background transition-colors">
                 Services
@@ -32,7 +32,7 @@ const Footer = () => {
                 About
               </Link>
               <Link to="/blog" className="text-background/80 hover:text-background transition-colors">
-                Blog
+                Insights
               </Link>
             </nav>
           </div>
@@ -43,8 +43,8 @@ const Footer = () => {
               Get in Touch
             </h4>
             <div className="flex flex-col gap-3 text-background/80">
-              <a href="mailto:hello@psykhe.co" className="hover:text-background transition-colors">
-                hello@psykhe.co
+              <a href="mailto:contact@siaa.edu.sg" className="hover:text-background transition-colors">
+                contact@siaa.edu.sg
               </a>
               <p>Singapore</p>
             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-background/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-background/50">
-            © {new Date().getFullYear()} Psykhe. All rights reserved.
+            © {new Date().getFullYear()} Singapore Institute of Academic Analytics. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/50">
             <Link to="/privacy" className="hover:text-background transition-colors">

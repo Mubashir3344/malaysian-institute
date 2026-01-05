@@ -5,46 +5,46 @@ import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Breaking green barriers: Empowering SMEs in Asia to embrace ESG practices",
-    client: "Major Regional Bank",
-    category: "Strategy & Design",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&h=800&fit=crop",
-    slug: "esg-practices",
+    title: "Enhancing research integrity frameworks for a leading university",
+    client: "National University",
+    category: "Integrity Assurance",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&h=800&fit=crop",
+    slug: "integrity-framework",
   },
   {
-    title: "Building digital solutions to transform liquidity management",
-    client: "Financial Institution",
-    category: "Product Design",
+    title: "Building advanced analytics capabilities for institutional research",
+    client: "Research Institute",
+    category: "Research Analytics",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
+    slug: "analytics-capabilities",
+  },
+  {
+    title: "Developing comprehensive training programs for early-career researchers",
+    client: "Graduate School",
+    category: "Professional Training",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=800&fit=crop",
+    slug: "researcher-training",
+  },
+  {
+    title: "Implementing plagiarism prevention systems across multiple campuses",
+    client: "University Consortium",
+    category: "Integrity Systems",
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&h=800&fit=crop",
+    slug: "plagiarism-prevention",
+  },
+  {
+    title: "Creating data governance frameworks for research institutions",
+    client: "Research Foundation",
+    category: "Data Governance",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
-    slug: "liquidity-management",
+    slug: "data-governance",
   },
   {
-    title: "Redesigning a hospitality website to drive revenue growth",
-    client: "Global Hospitality Group",
-    category: "UX & Development",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop",
-    slug: "hospitality-redesign",
-  },
-  {
-    title: "Creating a seamless healthcare booking experience",
-    client: "Healthcare Provider",
-    category: "Research & Design",
+    title: "Establishing ethics review board procedures and guidelines",
+    client: "Medical School",
+    category: "Ethics Review",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=800&fit=crop",
-    slug: "healthcare-booking",
-  },
-  {
-    title: "Reimagining digital banking for millennials",
-    client: "Digital Bank",
-    category: "Strategy & Innovation",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=800&fit=crop",
-    slug: "digital-banking",
-  },
-  {
-    title: "Building a sustainable tourism platform",
-    client: "Tourism Board",
-    category: "Full Service",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=800&fit=crop",
-    slug: "sustainable-tourism",
+    slug: "ethics-review",
   },
 ];
 
@@ -58,11 +58,11 @@ const Work = () => {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
-                Our <em className="italic">work</em>
+                Our <em className="italic">research</em>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                A selection of projects where we've helped businesses transform 
-                through research, strategy, and design.
+                A selection of projects where we've helped institutions enhance 
+                research quality, integrity, and professional development.
               </p>
             </div>
           </div>

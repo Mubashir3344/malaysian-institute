@@ -3,22 +3,22 @@ import { ArrowRight } from "lucide-react";
 
 const posts = [
   {
-    title: "The Future of Human-Centric Design in APAC",
+    title: "Navigating Research Ethics in the Age of AI",
     date: "December 2024",
-    author: "Psykhe Team",
-    slug: "future-human-centric-design",
+    author: "SIAA Research Team",
+    slug: "research-ethics-ai",
   },
   {
-    title: "5 Principles for Building Trust Through UX",
+    title: "Best Practices for Maintaining Academic Integrity",
     date: "November 2024",
-    author: "Design Lead",
-    slug: "building-trust-ux",
+    author: "Integrity Division",
+    slug: "academic-integrity-practices",
   },
   {
-    title: "How ESG is Reshaping Digital Product Strategy",
+    title: "The Future of Research Analytics in Higher Education",
     date: "October 2024",
-    author: "Strategy Team",
-    slug: "esg-digital-strategy",
+    author: "Analytics Team",
+    slug: "research-analytics-future",
   },
 ];
 
@@ -28,13 +28,13 @@ const BlogSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-end justify-between mb-12">
           <h2 className="text-3xl md:text-4xl font-serif">
-            Latest <em className="italic">thoughts</em>
+            Latest <em className="italic">insights</em>
           </h2>
           <Link 
             to="/blog" 
             className="hidden md:inline-flex items-center gap-2 text-sm font-medium hover:gap-4 transition-all"
           >
-            View all posts <ArrowRight size={16} />
+            View all insights <ArrowRight size={16} />
           </Link>
         </div>
 
@@ -63,7 +63,7 @@ const BlogSection = () => {
           to="/blog" 
           className="md:hidden inline-flex items-center gap-2 text-sm font-medium mt-8 hover:gap-4 transition-all"
         >
-          View all posts <ArrowRight size={16} />
+          View all insights <ArrowRight size={16} />
         </Link>
       </div>
     </section>

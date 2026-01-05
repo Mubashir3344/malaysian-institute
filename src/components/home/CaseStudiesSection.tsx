@@ -4,24 +4,24 @@ import { ArrowRight } from "lucide-react";
 const caseStudies = [
   {
     id: 1,
-    title: "Breaking green barriers: Empowering SMEs in Asia to embrace ESG practices",
-    description: "How can a multinational bank support the ESG initiatives of regional Small Medium Enterprises (SMEs) and position itself as the preferred banking partner?",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&h=800&fit=crop",
-    slug: "esg-practices",
+    title: "Enhancing research integrity frameworks for a leading university",
+    description: "How can a major research university strengthen its integrity policies and create a culture of ethical research practices?",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&h=800&fit=crop",
+    slug: "integrity-framework",
   },
   {
     id: 2,
-    title: "Building digital solutions to transform liquidity management for businesses",
-    description: "How can a major regional bank help their business clients manage their liquidity more seamlessly?",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
-    slug: "liquidity-management",
+    title: "Building advanced analytics capabilities for institutional research",
+    description: "How can research institutions leverage data analytics to improve research outcomes and decision-making?",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
+    slug: "analytics-capabilities",
   },
   {
     id: 3,
-    title: "Redesigning a hospitality website to drive revenue growth",
-    description: "A global hospitality company sought to overhaul their website and increase conversion via data triangulation from website performance metrics.",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop",
-    slug: "hospitality-redesign",
+    title: "Developing comprehensive training programs for early-career researchers",
+    description: "A systematic approach to equipping the next generation of academics with essential research skills and ethical foundations.",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=800&fit=crop",
+    slug: "researcher-training",
   },
 ];
 

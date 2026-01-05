@@ -5,51 +5,51 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    id: "research-insights",
-    title: "Research & Insights",
-    description: "Understand user motivations through our data-driven approach",
+    id: "research-support",
+    title: "Research Support",
+    description: "Comprehensive research methodology and analytical support",
     details: [
-      "User Research & Interviews",
-      "Market Analysis",
-      "Competitive Benchmarking",
-      "Customer Journey Mapping",
-      "Usability Testing",
+      "Research Design & Methodology",
+      "Statistical Analysis & Data Analytics",
+      "Literature Review Support",
+      "Manuscript Preparation",
+      "Publication Strategy",
     ],
   },
   {
-    id: "strategy-innovation",
-    title: "Strategy & Innovation",
-    description: "Map out the blueprint for your next big idea",
+    id: "integrity-assurance",
+    title: "Integrity Assurance",
+    description: "Ensuring the highest standards of academic integrity",
     details: [
-      "Digital Strategy",
-      "Service Design",
-      "Innovation Workshops",
-      "Business Model Design",
-      "Roadmap Planning",
+      "Plagiarism Detection & Prevention",
+      "Ethics Review Consultation",
+      "Research Misconduct Prevention",
+      "Compliance Auditing",
+      "Integrity Policy Development",
     ],
   },
   {
-    id: "product-design",
-    title: "Product Design",
-    description: "Transform ambitious ideas into engaging experiences",
+    id: "professional-training",
+    title: "Professional Training",
+    description: "Skill development programs for researchers and academics",
     details: [
-      "UX/UI Design",
-      "Design Systems",
-      "Prototyping",
-      "Interaction Design",
-      "Visual Design",
+      "Research Methodology Workshops",
+      "Academic Writing Skills",
+      "Statistical Software Training",
+      "Publication Ethics Seminars",
+      "Peer Review Training",
     ],
   },
   {
-    id: "development-delivery",
-    title: "Development & Delivery",
-    description: "Bring your vision to life with cutting-edge technology",
+    id: "institutional-consulting",
+    title: "Institutional Consulting",
+    description: "Strategic support for academic institutions",
     details: [
-      "Frontend Development",
-      "Mobile Development",
-      "CMS Integration",
-      "Quality Assurance",
-      "Launch Support",
+      "Research Quality Assessment",
+      "Policy Development",
+      "Accreditation Support",
+      "Capacity Building Programs",
+      "Research Culture Enhancement",
     ],
   },
 ];
@@ -67,8 +67,8 @@ const Services = () => {
                 Our <em className="italic">services</em>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                We help transform businesses in Asia through a comprehensive approach – 
-                research, innovation, and design.
+                We provide comprehensive academic research support and professional training 
+                services tailored to researchers, academics, and institutions across Asia-Pacific.
               </p>
             </div>
           </div>
@@ -117,14 +117,14 @@ const Services = () => {
         <section className="py-20 lg:py-32 bg-foreground text-background">
           <div className="container mx-auto px-6 lg:px-12 text-center">
             <h2 className="text-3xl md:text-4xl font-serif mb-6">
-              Ready to start your <em className="italic">project</em>?
+              Ready to elevate your <em className="italic">research</em>?
             </h2>
             <p className="text-background/70 mb-8 max-w-xl mx-auto">
-              Let's discuss how we can help transform your business through 
-              human-centric design.
+              Let's discuss how SIAA can support your academic research 
+              and professional development needs.
             </p>
             <Button asChild variant="outline" className="border-background text-background hover:bg-background hover:text-foreground">
-              <Link to="/contact">Get in touch</Link>
+              <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>
         </section>

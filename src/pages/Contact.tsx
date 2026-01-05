@@ -10,7 +10,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
+    institution: "",
     message: "",
   });
 
@@ -20,7 +20,7 @@ const Contact = () => {
       title: "Message sent",
       description: "Thank you for reaching out. We'll be in touch soon.",
     });
-    setFormData({ name: "", email: "", company: "", message: "" });
+    setFormData({ name: "", email: "", institution: "", message: "" });
   };
 
   return (
@@ -33,11 +33,11 @@ const Contact = () => {
               {/* Left Column */}
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
-                  Let's create something <em className="italic">great</em> together
+                  Let's advance <em className="italic">research</em> together
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-                  Have a project in mind? We'd love to hear from you. 
-                  Send us a message and we'll get back to you shortly.
+                  Have a research challenge or training need? We'd love to hear from you. 
+                  Reach out and our team will respond within 24 hours.
                 </p>
 
                 <div className="space-y-8">
@@ -46,10 +46,10 @@ const Contact = () => {
                       Email
                     </h3>
                     <a 
-                      href="mailto:hello@psykhe.co" 
+                      href="mailto:contact@siaa.edu.sg" 
                       className="text-lg hover:text-muted-foreground transition-colors"
                     >
-                      hello@psykhe.co
+                      contact@siaa.edu.sg
                     </a>
                   </div>
                   <div>
@@ -91,14 +91,14 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium mb-2">
-                      Company (optional)
+                    <label htmlFor="institution" className="block text-sm font-medium mb-2">
+                      Institution (optional)
                     </label>
                     <Input
-                      id="company"
+                      id="institution"
                       type="text"
-                      value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      value={formData.institution}
+                      onChange={(e) => setFormData({ ...formData, institution: e.target.value })}
                       className="border-border"
                     />
                   </div>
