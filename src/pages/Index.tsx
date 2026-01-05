@@ -1,12 +1,14 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/home/HeroSection";
-import NewsSection from "@/components/home/NewsSection";
-import ProgrammesSection from "@/components/home/ProgrammesSection";
-import WhyUSCSection from "@/components/home/WhyUSCSection";
+import CaseStudiesSection from "@/components/home/CaseStudiesSection";
+import IntroSection from "@/components/home/IntroSection";
+import ServicesSection from "@/components/home/ServicesSection";
+import ClientsSection from "@/components/home/ClientsSection";
 import StatsSection from "@/components/home/StatsSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
-import CTASection from "@/components/home/CTASection";
+import BlogSection from "@/components/home/BlogSection";
+import ContactSection from "@/components/home/ContactSection";
 
 const Index = () => {
   return (
@@ -14,12 +16,14 @@ const Index = () => {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <ProgrammesSection />
+        <CaseStudiesSection />
+        <IntroSection />
+        <ServicesSection />
+        <ClientsSection />
         <StatsSection />
-        <WhyUSCSection />
         <TestimonialsSection />
-        <NewsSection />
-        <CTASection />
+        <BlogSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

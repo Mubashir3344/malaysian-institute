@@ -1,24 +1,26 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Target, Eye, Award, Users, Microscope, Building } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Research Director",
-    role: "Research Leadership",
-    description: "Distinguished scientist with extensive experience in research strategy and academic administration.",
+    name: "Alex Chen",
+    role: "Founder & Creative Director",
+    bio: "With over 15 years in design, Alex leads our creative vision and strategic direction.",
   },
   {
-    name: "Senior Research Fellow",
-    role: "Technology & Innovation",
-    description: "Industry expert with qualifications in advanced technology research and practical applications.",
+    name: "Maya Singh",
+    role: "Head of Strategy",
+    bio: "Maya brings deep expertise in business transformation and innovation consulting.",
   },
   {
-    name: "Research Scientist",
-    role: "Data & Analytics",
-    description: "Specialist in data science and analytics with expertise in AI and machine learning research.",
+    name: "David Lim",
+    role: "Design Director",
+    bio: "David leads our product design team, crafting intuitive and beautiful experiences.",
+  },
+  {
+    name: "Rachel Tan",
+    role: "Research Lead",
+    bio: "Rachel heads our research practice, uncovering insights that drive design decisions.",
   },
 ];
 
@@ -26,135 +28,66 @@ const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1">
-        {/* Hero Section */}
-        <section className="gradient-hero py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-accent blur-3xl" />
-          </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl">
-              <Badge variant="secondary" className="mb-4">About USRI</Badge>
-              <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary-foreground mb-6">
-                Advancing Knowledge Through Research
+      <main className="flex-1 pt-20">
+        {/* Hero */}
+        <section className="py-20 lg:py-32">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="max-w-4xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
+                We believe in the power of <em className="italic">design</em> to transform business
               </h1>
-              <p className="text-lg text-primary-foreground/80 leading-relaxed">
-                United Seas Research Institute is a premier research institution 
-                committed to driving innovation and scientific advancement since 2020.
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                Psykhe is Singapore's leading strategic design consultancy. We combine 
+                research, strategy, and design to create experiences that matter.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Mission & Vision */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="bg-usc-sky border-none shadow-card">
-                <CardContent className="p-8">
-                  <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mb-6">
-                    <Target className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Our Mission</h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    To advance scientific knowledge and innovation for the betterment of society. 
-                    We are dedicated to conducting groundbreaking research that addresses 
-                    real-world challenges and drives meaningful impact.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-usc-cream border-none shadow-card">
-                <CardContent className="p-8">
-                  <div className="w-16 h-16 rounded-xl bg-accent flex items-center justify-center mb-6">
-                    <Eye className="h-8 w-8 text-accent-foreground" />
-                  </div>
-                  <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Our Vision</h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    To be a leading research institution in Singapore and beyond, 
-                    recognized for excellence in innovation, scientific discovery, 
-                    and translating research into practical solutions.
-                  </p>
-                </CardContent>
-              </Card>
+        {/* Mission */}
+        <section className="py-20 lg:py-32 bg-secondary">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              <div>
+                <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
+                  Our Mission
+                </h2>
+                <p className="text-2xl md:text-3xl font-serif leading-relaxed">
+                  To create meaningful experiences that bridge the gap between 
+                  business objectives and human needs.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
+                  Our Approach
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  We start with people. By deeply understanding users, stakeholders, 
+                  and market dynamics, we uncover opportunities that others miss.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Our multi-disciplinary team brings together researchers, strategists, 
+                  designers, and technologists to deliver holistic solutions.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Institutional Details */}
-        <section className="py-20 bg-muted">
-          <div className="container mx-auto px-4">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-                Institutional Information
-              </h2>
-              <p className="text-muted-foreground">
-                United Seas Research Institute is a registered research institution 
-                dedicated to advancing scientific knowledge and innovation.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="bg-card shadow-soft text-center">
-                <CardContent className="p-6">
-                  <Building className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h3 className="font-semibold text-foreground mb-2">Full Name</h3>
-                  <p className="text-sm text-muted-foreground">United Seas Research Institute Pte. Ltd.</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card shadow-soft text-center">
-                <CardContent className="p-6">
-                  <Award className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h3 className="font-semibold text-foreground mb-2">UEN</h3>
-                  <p className="text-sm text-muted-foreground">202008816N</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card shadow-soft text-center">
-                <CardContent className="p-6">
-                  <Microscope className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h3 className="font-semibold text-foreground mb-2">Established</h3>
-                  <p className="text-sm text-muted-foreground">March 17, 2020</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card shadow-soft text-center">
-                <CardContent className="p-6">
-                  <Users className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h3 className="font-semibold text-foreground mb-2">Status</h3>
-                  <p className="text-sm text-muted-foreground">Active Research Institution</p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Research Team */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-                Our Research Team
-              </h2>
-              <p className="text-muted-foreground">
-                Our team comprises distinguished researchers and scientists with 
-                extensive expertise across multiple disciplines.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => (
-                <Card key={index} className="bg-card shadow-soft hover:shadow-card transition-shadow">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-20 h-20 rounded-full bg-usc-sky mx-auto mb-4 flex items-center justify-center">
-                      <Users className="h-10 w-10 text-primary" />
-                    </div>
-                    <h3 className="text-lg font-serif font-semibold text-foreground mb-1">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
-                    <p className="text-sm text-muted-foreground">{member.description}</p>
-                  </CardContent>
-                </Card>
+        {/* Team */}
+        <section className="py-20 lg:py-32">
+          <div className="container mx-auto px-6 lg:px-12">
+            <h2 className="text-3xl md:text-4xl font-serif mb-16">
+              Meet the <em className="italic">team</em>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+              {teamMembers.map((member) => (
+                <div key={member.name}>
+                  <div className="aspect-square bg-secondary mb-6" />
+                  <h3 className="text-xl font-serif mb-1">{member.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{member.role}</p>
+                  <p className="text-sm text-muted-foreground">{member.bio}</p>
+                </div>
               ))}
             </div>
           </div>
