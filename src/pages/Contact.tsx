@@ -46,10 +46,21 @@ const Contact = () => {
                       Email
                     </h3>
                     <a 
-                      href="mailto:contact@siaa.edu.sg" 
+                      href="mailto:contact@siaa-sg.org" 
                       className="text-lg hover:text-muted-foreground transition-colors"
                     >
-                      contact@siaa.edu.sg
+                      contact@siaa-sg.org
+                    </a>
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-2">
+                      Phone
+                    </h3>
+                    <a 
+                      href="tel:+6531064527" 
+                      className="text-lg hover:text-muted-foreground transition-colors"
+                    >
+                      +65 3106 4527
                     </a>
                   </div>
                   <div>

@@ -43,8 +43,11 @@ const Footer = () => {
               Get in Touch
             </h4>
             <div className="flex flex-col gap-3 text-background/80">
-              <a href="mailto:contact@siaa.edu.sg" className="hover:text-background transition-colors">
-                contact@siaa.edu.sg
+              <a href="mailto:contact@siaa-sg.org" className="hover:text-background transition-colors">
+                contact@siaa-sg.org
+              </a>
+              <a href="tel:+6531064527" className="hover:text-background transition-colors">
+                +65 3106 4527
               </a>
               <p>Singapore</p>
             </div>
