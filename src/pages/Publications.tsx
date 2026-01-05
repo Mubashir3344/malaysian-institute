@@ -12,11 +12,11 @@ const publications = [
     abstract: "A comprehensive analysis of plagiarism prevention protocols across medical entrance examination systems in South Asia.",
   },
   {
-    title: "The MDCAT Analytics Report 2025: Trends and Insights",
+    title: "Singapore A-Level Performance Analytics 2025: Trends and Insights",
     type: "Whitepaper",
     status: "Forthcoming Q2 2026",
     authors: "SIAA Research Team",
-    abstract: "Data-driven analysis of Medical and Dental College Admission Test patterns, including performance metrics and predictive modeling.",
+    abstract: "Data-driven analysis of Singapore GCE A-Level examination patterns, including subject performance metrics, university admission trends, and predictive modeling.",
   },
   {
     title: "Ethical AI Integration in Academic Research: A Framework for Universities",

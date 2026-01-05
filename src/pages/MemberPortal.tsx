@@ -85,10 +85,10 @@ const MemberPortal = () => {
                   </p>
                 </div>
                 <div className="bg-background p-8 border border-border">
-                  <h3 className="text-lg font-serif mb-3">Turnitin Access</h3>
+                  <h3 className="text-lg font-serif mb-3">Plagiarism Detection</h3>
                   <p className="text-sm text-muted-foreground">
-                    Institutional access to Turnitin Feedback Studio for plagiarism 
-                    checking and originality verification.
+                    Institutional access to advanced similarity detection tools for 
+                    plagiarism checking and originality verification.
                   </p>
                 </div>
                 <div className="bg-background p-8 border border-border">

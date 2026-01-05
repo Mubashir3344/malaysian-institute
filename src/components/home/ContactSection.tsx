@@ -35,7 +35,7 @@ const ContactSection = () => {
               >
                 director@siaa-sg.org
               </a>
-              <p className="text-xs text-muted-foreground mt-2">Partnerships & Turnitin</p>
+              <p className="text-xs text-muted-foreground mt-2">Partnerships & Collaborations</p>
             </div>
             <div className="bg-background p-8 border border-border text-center">
               <Phone className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />

@@ -100,7 +100,7 @@ const Contact = () => {
                             director@siaa-sg.org
                           </a>
                           <p className="text-sm text-muted-foreground">
-                            Institutional Partnerships & Turnitin Applications
+                            Institutional Partnerships & Research Collaborations
                           </p>
                         </div>
                       </div>
@@ -190,7 +190,7 @@ const Contact = () => {
                         <SelectItem value="plagiarism-training">Plagiarism Training</SelectItem>
                         <SelectItem value="research-collaboration">Research Collaboration</SelectItem>
                         <SelectItem value="institutional-partnership">Institutional Partnership</SelectItem>
-                        <SelectItem value="turnitin-access">Turnitin Access</SelectItem>
+                        <SelectItem value="integrity-tools">Integrity Tools Access</SelectItem>
                         <SelectItem value="general-inquiry">General Inquiry</SelectItem>
                       </SelectContent>
                     </Select>

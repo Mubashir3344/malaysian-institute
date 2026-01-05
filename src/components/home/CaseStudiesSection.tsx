@@ -4,9 +4,9 @@ import { ArrowRight, Shield } from "lucide-react";
 const researchAreas = [
   {
     id: 1,
-    title: "Biomedical Entrance Analytics (MDCAT)",
-    description: "Data-driven insights for medical and dental college admission systems, with focus on examination design and performance prediction.",
-    link: "/research-areas#biomedical-analytics",
+    title: "Singapore A-Level Analytics",
+    description: "Data-driven insights for Singapore's GCE A-Level examination system, with focus on performance prediction and university pathways.",
+    link: "/research-areas#singapore-alevel-analytics",
   },
   {
     id: 2,
@@ -79,7 +79,7 @@ const CaseStudiesSection = () => {
               <h3 className="text-2xl font-serif mb-3">Academic Integrity & Plagiarism Prevention</h3>
               <p className="text-background/80 leading-relaxed">
                 SIAA maintains a zero-tolerance policy toward academic dishonesty. We utilize 
-                Turnitin Feedback Studio as our primary institutional evaluation engine.
+                advanced similarity detection systems as our institutional evaluation framework.
               </p>
             </div>
             <Link 

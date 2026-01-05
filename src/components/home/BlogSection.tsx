@@ -9,10 +9,10 @@ const publications = [
     slug: "integrity-frameworks-medical-education",
   },
   {
-    title: "The MDCAT Analytics Report 2025: Trends and Insights",
+    title: "Singapore A-Level Performance Analytics 2025: Trends and Insights",
     status: "Forthcoming Q2 2026",
     type: "Whitepaper",
-    slug: "mdcat-analytics-2025",
+    slug: "alevel-analytics-2025",
   },
   {
     title: "Ethical AI Integration in Academic Research: A Framework for Universities",

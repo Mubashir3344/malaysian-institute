@@ -13,7 +13,7 @@ const services = [
   },
   {
     title: "Integrity Assurance",
-    description: "Turnitin-powered plagiarism prevention and originality verification",
+    description: "Advanced plagiarism prevention and originality verification systems",
     image: researchAppliedScience,
   },
   {

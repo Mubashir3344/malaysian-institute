@@ -6,15 +6,15 @@ import researchImage from "@/assets/hero-research.jpg";
 
 const researchAreas = [
   {
-    id: "biomedical-analytics",
-    title: "Biomedical Entrance Analytics (MDCAT)",
-    subtitle: "Data-Driven Insights for Medical Education",
-    description: "SIAA specializes in comprehensive analytics for medical and dental college admission systems, with particular focus on the MDCAT examination framework. Our research provides evidence-based insights to improve examination design, predict performance outcomes, and ensure fair assessment practices.",
+    id: "singapore-alevel-analytics",
+    title: "Singapore A-Level Analytics",
+    subtitle: "Data-Driven Insights for Pre-University Education",
+    description: "SIAA specializes in comprehensive analytics for Singapore's GCE A-Level examination system, providing evidence-based insights to improve examination preparation, predict performance outcomes, and support students and institutions in achieving academic excellence.",
     focus: [
       "Performance pattern analysis and predictive modeling",
-      "Examination item analysis and quality assurance",
-      "Comparative studies across regional medical education systems",
-      "Admission criteria optimization through data science",
+      "Subject combination optimization and trend analysis",
+      "Comparative studies across junior colleges and institutions",
+      "University admission pathway analytics",
     ],
   },
   {
