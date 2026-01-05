@@ -6,8 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Work from "./pages/Work";
-import Blog from "./pages/Blog";
+import ResearchAreas from "./pages/ResearchAreas";
+import AcademicIntegrity from "./pages/AcademicIntegrity";
+import Publications from "./pages/Publications";
+import MemberPortal from "./pages/MemberPortal";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -23,9 +25,14 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/research-areas" element={<ResearchAreas />} />
+          <Route path="/academic-integrity" element={<AcademicIntegrity />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/member-portal" element={<MemberPortal />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Legacy routes redirects */}
+          <Route path="/work" element={<ResearchAreas />} />
+          <Route path="/blog" element={<Publications />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -4,23 +4,35 @@ const IntroSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif leading-relaxed mb-8">
-            <em className="italic">SIAA</em> — Singapore Institute of Academic Analytics, 
-            your trusted partner in elevating research standards and academic integrity.
+            <em className="italic">SIAA</em> — An independent research hub focused on 
+            academic metrics and integrity training for South Asian and Global researchers.
           </h2>
           <p className="text-xl md:text-2xl font-serif text-muted-foreground leading-relaxed mb-12">
-            As a boutique academic research hub, we combine scholarly rigor with 
-            practical training to support researchers and institutions across Asia-Pacific.
+            We bridge the gap between raw data and scholarly achievement through 
+            rigorous analytics and professional development.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto">
-            <p className="text-muted-foreground leading-relaxed">
-              We provide comprehensive research support services, from methodology 
-              design to data analytics, ensuring your research meets the highest standards.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Our professional training programs equip academics and researchers 
-              with cutting-edge skills in research integrity, publication ethics, 
-              and advanced analytical methodologies.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
+            <div className="bg-background p-8 border border-border">
+              <h3 className="text-lg font-serif mb-3">Objectivity</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Data-driven insights free from bias, ensuring credible and reproducible 
+                research outcomes.
+              </p>
+            </div>
+            <div className="bg-background p-8 border border-border">
+              <h3 className="text-lg font-serif mb-3">Accountability</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Transparent processes and institutional oversight for all research 
+                activities and publications.
+              </p>
+            </div>
+            <div className="bg-background p-8 border border-border">
+              <h3 className="text-lg font-serif mb-3">Academic Honesty</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Zero-tolerance policy on plagiarism with advanced similarity detection 
+                powered by Turnitin.
+              </p>
+            </div>
           </div>
         </div>
       </div>

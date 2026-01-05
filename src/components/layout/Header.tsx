@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -8,25 +8,26 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Research", href: "/work" },
-    { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
-    { name: "Insights", href: "/blog" },
+    { name: "Research Areas", href: "/research-areas" },
+    { name: "Academic Integrity", href: "/academic-integrity" },
+    { name: "Publications", href: "/publications" },
+    { name: "Services", href: "/services" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-2xl font-serif tracking-tight font-bold">SIAA</span>
+            <span className="text-2xl font-heading tracking-tight font-bold">SIAA</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -40,16 +41,22 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Contact Button */}
-          <div className="hidden md:block">
+          {/* Right Side Actions */}
+          <div className="hidden lg:flex items-center gap-4">
+            <Button asChild variant="ghost" size="sm">
+              <Link to="/member-portal" className="flex items-center gap-2">
+                <User className="w-4 h-4" />
+                Login
+              </Link>
+            </Button>
             <Button asChild variant="outline" className="border-foreground hover:bg-foreground hover:text-background">
-              <Link to="/contact">Get in Touch</Link>
+              <Link to="/contact">Contact</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -59,7 +66,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-6 border-t border-border">
+          <div className="lg:hidden py-6 border-t border-border">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -71,13 +78,23 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                to="/contact"
-                className="text-lg font-medium py-2 mt-4 border-t border-border pt-6"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Get in Touch
-              </Link>
+              <div className="border-t border-border pt-4 mt-2 space-y-4">
+                <Link
+                  to="/member-portal"
+                  className="flex items-center gap-2 text-lg font-medium py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <User className="w-5 h-5" />
+                  Member Login
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-lg font-medium py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Contact Us
+                </Link>
+              </div>
             </nav>
           </div>
         )}

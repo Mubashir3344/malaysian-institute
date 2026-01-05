@@ -1,26 +1,30 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import researchAppliedScience from "@/assets/research-applied-science.jpg";
+import researchBusiness from "@/assets/research-business.jpg";
+import researchDataScience from "@/assets/research-data-science.jpg";
+import teamCollaboration from "@/assets/team-collaboration.jpg";
 
 const services = [
   {
     title: "Research Support",
-    description: "Comprehensive methodology and analytical support for your research",
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop",
+    description: "Comprehensive methodology and analytical support for academic research projects",
+    image: researchDataScience,
   },
   {
     title: "Integrity Assurance",
-    description: "Ensuring the highest standards of academic integrity and ethics",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",
+    description: "Turnitin-powered plagiarism prevention and originality verification",
+    image: researchAppliedScience,
   },
   {
     title: "Professional Training",
-    description: "Skill development programs for researchers and academics",
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop",
+    description: "Workshops on citation management, AI ethics, and paraphrasing techniques",
+    image: teamCollaboration,
   },
   {
     title: "Institutional Consulting",
     description: "Strategic support for academic institutions and research centers",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+    image: researchBusiness,
   },
 ];
 
