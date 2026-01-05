@@ -1,66 +1,69 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "USRI provided me with the resources and mentorship to pursue cutting-edge research in AI. The collaborative environment is truly exceptional.",
-    name: "Dr. Sarah Chen",
-    role: "AI Research Fellow",
-    image: null,
+    quote: "Psykhe brought a fresh perspective to our digital transformation. Their human-centric approach helped us truly understand our customers.",
+    author: "Sarah Chen",
+    role: "Head of Digital, Major Bank",
   },
   {
-    quote: "The institute's commitment to translating research into real-world applications sets it apart. I've grown tremendously as a researcher here.",
-    name: "Prof. Michael Tan",
-    role: "Senior Research Scientist",
-    image: null,
+    quote: "The team's ability to blend strategic thinking with beautiful design execution is remarkable. They've become our go-to partner for all things UX.",
+    author: "Michael Tan",
+    role: "VP Product, Healthcare Tech",
   },
   {
-    quote: "From state-of-the-art facilities to global partnerships, USRI offers everything a researcher needs to make meaningful contributions to science.",
-    name: "Dr. Emily Wong",
-    role: "Research Director",
-    image: null,
+    quote: "Working with Psykhe was transformative. They didn't just design a product; they helped us reimagine our entire customer journey.",
+    author: "Amanda Lee",
+    role: "Director of Innovation, Hospitality Group",
   },
 ];
 
 const TestimonialsSection = () => {
-  return (
-    <section className="py-24 bg-usc-sky">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-primary text-sm font-medium uppercase tracking-wider">Testimonials</span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-2 mb-4">
-            What Our Researchers Say
-          </h2>
-          <p className="text-muted-foreground">
-            Hear from the brilliant minds who are part of our research community.
-          </p>
-        </div>
+  const [current, setCurrent] = useState(0);
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card 
-              key={index} 
-              className="bg-card border-none shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
+  const next = () => setCurrent((prev) => (prev + 1) % testimonials.length);
+  const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+
+  return (
+    <section className="py-20 lg:py-32 bg-foreground text-background">
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="max-w-4xl mx-auto text-center">
+          <blockquote className="text-2xl md:text-3xl lg:text-4xl font-serif leading-relaxed mb-12">
+            "{testimonials[current].quote}"
+          </blockquote>
+          <div className="mb-12">
+            <p className="font-medium">{testimonials[current].author}</p>
+            <p className="text-background/60">{testimonials[current].role}</p>
+          </div>
+          <div className="flex items-center justify-center gap-4">
+            <button
+              onClick={prev}
+              className="p-2 border border-background/30 hover:border-background transition-colors"
+              aria-label="Previous testimonial"
             >
-              <CardContent className="p-8">
-                <Quote className="h-10 w-10 text-accent mb-6" />
-                <p className="text-foreground leading-relaxed mb-6 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-usc-navy flex items-center justify-center">
-                    <span className="text-primary-foreground font-semibold text-lg">
-                      {testimonial.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+              <ChevronLeft size={20} />
+            </button>
+            <div className="flex gap-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrent(index)}
+                  className={`w-2 h-2 rounded-full transition-colors ${
+                    index === current ? "bg-background" : "bg-background/30"
+                  }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                />
+              ))}
+            </div>
+            <button
+              onClick={next}
+              className="p-2 border border-background/30 hover:border-background transition-colors"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
         </div>
       </div>
     </section>
