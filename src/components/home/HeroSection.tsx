@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, GraduationCap, Users, Award } from "lucide-react";
+import { ArrowRight, Microscope, Users, Award } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -22,29 +22,29 @@ const HeroSection = () => {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
             <Award className="h-4 w-4 text-accent" />
-            <span className="text-primary-foreground/90 text-sm font-medium">CPE Registered Private Education Institution</span>
+            <span className="text-primary-foreground/90 text-sm font-medium">Premier Research Institution</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Pursue Your Study at{" "}
-            <span className="text-accent">United Seas College</span>
+            Advancing Research at{" "}
+            <span className="text-accent">United Seas Research Institute</span>
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Empowering lifelong skills development for the betterment of society. 
-            Join our client-focused institution providing affordable, quality education 
-            through innovative virtual classroom environments.
+            Pioneering innovative research and scientific advancement for the betterment of society. 
+            Join our world-class team driving breakthrough discoveries 
+            across technology, business, and applied sciences.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="xl" asChild>
               <Link to="/programmes">
-                Explore Programmes
+                Explore Research
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/about">Learn About USC</Link>
+              <Link to="/about">Learn About USRI</Link>
             </Button>
           </div>
 
@@ -52,17 +52,17 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-6 max-w-lg animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="text-center">
               <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary-foreground/10 backdrop-blur-sm mx-auto mb-2">
-                <GraduationCap className="h-6 w-6 text-accent" />
+                <Microscope className="h-6 w-6 text-accent" />
               </div>
               <div className="text-2xl font-bold text-primary-foreground">10+</div>
-              <div className="text-sm text-primary-foreground/70">Programmes</div>
+              <div className="text-sm text-primary-foreground/70">Research Areas</div>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary-foreground/10 backdrop-blur-sm mx-auto mb-2">
                 <Users className="h-6 w-6 text-accent" />
               </div>
-              <div className="text-2xl font-bold text-primary-foreground">500+</div>
-              <div className="text-sm text-primary-foreground/70">Students</div>
+              <div className="text-2xl font-bold text-primary-foreground">50+</div>
+              <div className="text-sm text-primary-foreground/70">Researchers</div>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary-foreground/10 backdrop-blur-sm mx-auto mb-2">
