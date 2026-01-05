@@ -27,7 +27,7 @@ const AcademicIntegrity = () => {
           </div>
         </section>
 
-        {/* Turnitin Section */}
+        {/* Similarity Detection Section */}
         <section className="py-20 lg:py-32">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -35,17 +35,16 @@ const AcademicIntegrity = () => {
                 <div className="flex items-center gap-3 mb-6">
                   <Shield className="w-8 h-8 text-foreground" />
                   <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
-                    Our Technology Partner
+                    Our Technology Framework
                   </h2>
                 </div>
                 <h3 className="text-3xl md:text-4xl font-serif leading-tight mb-6">
-                  Powered by <em className="italic">Turnitin</em> Feedback Studio
+                  Advanced <em className="italic">Similarity Detection</em> Systems
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  To uphold the highest standards of academic integrity, SIAA utilizes the 
-                  Turnitin Feedback Studio as our primary institutional evaluation engine. 
-                  This world-class similarity detection platform ensures the authenticity 
-                  of every submission.
+                  To uphold the highest standards of academic integrity, SIAA utilizes 
+                  industry-leading similarity detection platforms as our institutional 
+                  evaluation engines. This ensures the authenticity of every submission.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Our internal threshold for similarity indices is strictly monitored to 
@@ -57,8 +56,8 @@ const AcademicIntegrity = () => {
                   <div className="w-24 h-24 bg-foreground/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Shield className="w-12 h-12" />
                   </div>
-                  <p className="text-2xl font-serif">Turnitin</p>
-                  <p className="text-sm text-muted-foreground mt-2">Official Institutional Partner</p>
+                  <p className="text-2xl font-serif">Integrity Framework</p>
+                  <p className="text-sm text-muted-foreground mt-2">Multi-Platform Detection</p>
                 </div>
               </div>
             </div>
@@ -98,7 +97,7 @@ const AcademicIntegrity = () => {
                 </div>
                 <h3 className="text-xl font-serif mb-4">Human Oversight</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our Academic Ethics Committee (AEC) reviews all Turnitin Similarity Reports 
+                  Our Academic Ethics Committee (AEC) reviews all similarity reports 
                   for high-stakes research to ensure scholarly integrity.
                 </p>
               </div>
@@ -153,7 +152,7 @@ const AcademicIntegrity = () => {
                 Institutional <em className="italic">Oversight</em>
               </h2>
               <p className="text-xl text-background/80 leading-relaxed mb-12">
-                Our Academic Ethics Committee (AEC) reviews all Turnitin Similarity Reports 
+                Our Academic Ethics Committee (AEC) reviews all similarity reports 
                 for high-stakes research to ensure that the "human element" of scholarship 
                 remains intact while benefiting from the precision of world-class technology.
               </p>

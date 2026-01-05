@@ -30,7 +30,7 @@ const IntroSection = () => {
               <h3 className="text-lg font-serif mb-3">Academic Honesty</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Zero-tolerance policy on plagiarism with advanced similarity detection 
-                powered by Turnitin.
+                and originality verification systems.
               </p>
             </div>
           </div>
