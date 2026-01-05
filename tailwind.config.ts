@@ -67,8 +67,9 @@ export default {
         "medium-gray": "hsl(var(--medium-gray))",
       },
       fontFamily: {
-        serif: ["Cormorant Garamond", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Playfair Display", "Georgia", "serif"],
+        heading: ["Merriweather", "Georgia", "serif"],
+        sans: ["Source Sans 3", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

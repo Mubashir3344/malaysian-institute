@@ -1,82 +1,70 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message sent",
-      description: "We'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
     <section className="py-20 lg:py-32 bg-secondary">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-center mb-4">
             Have a research <em className="italic">challenge</em>?
           </h2>
-          <p className="text-center text-muted-foreground mb-12">
-            Let's discuss how SIAA can support your academic and research needs.
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Contact SIAA for research support, integrity assurance, professional training, 
+            or institutional partnership inquiries.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Name
-                </label>
-                <Input
-                  id="name"
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                  className="bg-background border-border"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  className="bg-background border-border"
-                />
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-background p-8 border border-border text-center">
+              <Mail className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
+              <h3 className="font-serif text-lg mb-2">Registrar</h3>
+              <a 
+                href="mailto:registrar@siaa-sg.org" 
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                registrar@siaa-sg.org
+              </a>
+              <p className="text-xs text-muted-foreground mt-2">Student & Account Inquiries</p>
             </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
-                Message
-              </label>
-              <Textarea
-                id="message"
-                rows={6}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                required
-                className="bg-background border-border resize-none"
-              />
+            <div className="bg-background p-8 border border-border text-center">
+              <Mail className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
+              <h3 className="font-serif text-lg mb-2">Director</h3>
+              <a 
+                href="mailto:director@siaa-sg.org" 
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                director@siaa-sg.org
+              </a>
+              <p className="text-xs text-muted-foreground mt-2">Partnerships & Turnitin</p>
             </div>
-            <Button type="submit" className="w-full">
-              Send Message
-            </Button>
-          </form>
+            <div className="bg-background p-8 border border-border text-center">
+              <Phone className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
+              <h3 className="font-serif text-lg mb-2">Institutional Inquiries</h3>
+              <a 
+                href="tel:+6531064527" 
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                +65 3106 4527
+              </a>
+              <p className="text-xs text-muted-foreground mt-2">Mon–Fri, 9 AM – 5 PM (SGT)</p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center gap-2 bg-foreground text-background px-8 py-4 text-sm font-medium hover:bg-foreground/90 transition-colors"
+            >
+              Contact Us <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+              <MapPin className="w-4 h-4" />
+              <span>1 Fusionopolis Place, #03-01, Galaxis, Singapore 138522</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
