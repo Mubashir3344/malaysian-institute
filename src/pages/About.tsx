@@ -2,23 +2,23 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Target, Eye, Award, Users, GraduationCap, Building } from "lucide-react";
+import { Target, Eye, Award, Users, Microscope, Building } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Academic Director",
-    role: "Programme Leadership",
-    description: "CPE-registered educator with extensive experience in curriculum development and academic administration.",
+    name: "Research Director",
+    role: "Research Leadership",
+    description: "Distinguished scientist with extensive experience in research strategy and academic administration.",
   },
   {
-    name: "Senior Lecturer",
-    role: "Business Studies",
-    description: "Industry professional with qualifications exceeding course levels and practical business experience.",
+    name: "Senior Research Fellow",
+    role: "Technology & Innovation",
+    description: "Industry expert with qualifications in advanced technology research and practical applications.",
   },
   {
-    name: "Language Instructor",
-    role: "HSK Programme",
-    description: "Certified Chinese language educator with expertise in HSK preparation and cultural studies.",
+    name: "Research Scientist",
+    role: "Data & Analytics",
+    description: "Specialist in data science and analytics with expertise in AI and machine learning research.",
   },
 ];
 
@@ -34,13 +34,13 @@ const About = () => {
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl">
-              <Badge variant="secondary" className="mb-4">About USC</Badge>
+              <Badge variant="secondary" className="mb-4">About USRI</Badge>
               <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary-foreground mb-6">
-                Empowering Through Education
+                Advancing Knowledge Through Research
               </h1>
               <p className="text-lg text-primary-foreground/80 leading-relaxed">
-                United Seas College is a CPE-registered Private Education Institution 
-                committed to providing quality, accessible education since 2020.
+                United Seas Research Institute is a premier research institution 
+                committed to driving innovation and scientific advancement since 2020.
               </p>
             </div>
           </div>
@@ -57,9 +57,9 @@ const About = () => {
                   </div>
                   <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Our Mission</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Lifelong skills development for the betterment of society. We are dedicated 
-                    to providing client-focused, affordable education that equips individuals 
-                    with practical skills for personal and professional growth.
+                    To advance scientific knowledge and innovation for the betterment of society. 
+                    We are dedicated to conducting groundbreaking research that addresses 
+                    real-world challenges and drives meaningful impact.
                   </p>
                 </CardContent>
               </Card>
@@ -71,9 +71,9 @@ const About = () => {
                   </div>
                   <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Our Vision</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    To be a leading provider of accessible, quality education in Singapore, 
-                    empowering learners from all backgrounds to achieve their educational 
-                    and career aspirations through innovative learning approaches.
+                    To be a leading research institution in Singapore and beyond, 
+                    recognized for excellence in innovation, scientific discovery, 
+                    and translating research into practical solutions.
                   </p>
                 </CardContent>
               </Card>
@@ -89,8 +89,8 @@ const About = () => {
                 Institutional Information
               </h2>
               <p className="text-muted-foreground">
-                United Seas College is registered with the Committee for Private Education 
-                under the Private Education Act 2009.
+                United Seas Research Institute is a registered research institution 
+                dedicated to advancing scientific knowledge and innovation.
               </p>
             </div>
 
@@ -99,7 +99,7 @@ const About = () => {
                 <CardContent className="p-6">
                   <Building className="h-10 w-10 text-primary mx-auto mb-4" />
                   <h3 className="font-semibold text-foreground mb-2">Full Name</h3>
-                  <p className="text-sm text-muted-foreground">United Seas College Pte. Ltd.</p>
+                  <p className="text-sm text-muted-foreground">United Seas Research Institute Pte. Ltd.</p>
                 </CardContent>
               </Card>
 
@@ -113,7 +113,7 @@ const About = () => {
 
               <Card className="bg-card shadow-soft text-center">
                 <CardContent className="p-6">
-                  <GraduationCap className="h-10 w-10 text-primary mx-auto mb-4" />
+                  <Microscope className="h-10 w-10 text-primary mx-auto mb-4" />
                   <h3 className="font-semibold text-foreground mb-2">Established</h3>
                   <p className="text-sm text-muted-foreground">March 17, 2020</p>
                 </CardContent>
@@ -123,23 +123,23 @@ const About = () => {
                 <CardContent className="p-6">
                   <Users className="h-10 w-10 text-primary mx-auto mb-4" />
                   <h3 className="font-semibold text-foreground mb-2">Status</h3>
-                  <p className="text-sm text-muted-foreground">Active / CPE Registered</p>
+                  <p className="text-sm text-muted-foreground">Active Research Institution</p>
                 </CardContent>
               </Card>
             </div>
           </div>
         </section>
 
-        {/* Academic Team */}
+        {/* Research Team */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-                Our Academic Team
+                Our Research Team
               </h2>
               <p className="text-muted-foreground">
-                All our teachers are CPE-registered with qualifications at least one level 
-                higher than the courses they teach.
+                Our team comprises distinguished researchers and scientists with 
+                extensive expertise across multiple disciplines.
               </p>
             </div>
 

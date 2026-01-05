@@ -7,26 +7,26 @@ import { ArrowRight, Calendar, Newspaper } from "lucide-react";
 const newsItems = [
   {
     id: 1,
-    title: "Renewal of USC's Registration under the Private Education Act 2009",
-    description: "United Seas College has successfully renewed its registration with the Committee for Private Education (CPE), reaffirming our commitment to quality education.",
+    title: "USRI Launches New AI Research Initiative",
+    description: "United Seas Research Institute announces a groundbreaking research initiative focused on artificial intelligence and machine learning applications in business and technology.",
     date: "December 2024",
     category: "Announcement",
     featured: true,
   },
   {
     id: 2,
-    title: "New Business Administration Diploma Programme",
-    description: "Introducing our comprehensive Business Administration Diploma designed for aspiring business professionals and entrepreneurs.",
+    title: "New Research Fellowship Programme",
+    description: "Introducing our comprehensive Research Fellowship designed for aspiring scientists and researchers in technology and applied sciences.",
     date: "November 2024",
     category: "Programme",
     featured: false,
   },
   {
     id: 3,
-    title: "Virtual Classroom Enhancement",
-    description: "We have upgraded our virtual classroom platform to provide an even more immersive and interactive learning experience.",
+    title: "Research Lab Expansion Complete",
+    description: "We have completed the expansion of our research facilities with state-of-the-art equipment for advanced scientific research.",
     date: "October 2024",
-    category: "Technology",
+    category: "Facilities",
     featured: false,
   },
 ];

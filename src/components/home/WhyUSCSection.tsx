@@ -1,35 +1,35 @@
-import { CheckCircle, Monitor, Shield, Users, Clock, Award } from "lucide-react";
+import { CheckCircle, Microscope, Shield, Users, Clock, Award } from "lucide-react";
 
 const features = [
   {
-    icon: Monitor,
-    title: "Virtual Classroom Environment",
-    description: "Experience quality education through our fixed-schedule virtual classrooms, allowing you to learn from anywhere.",
+    icon: Microscope,
+    title: "Cutting-Edge Research Facilities",
+    description: "Access state-of-the-art laboratories and research equipment for groundbreaking discoveries.",
   },
   {
     icon: Shield,
-    title: "CPE Registered",
-    description: "As a registered Private Education Institution, we meet all regulatory standards set by the Committee for Private Education.",
+    title: "Research Excellence",
+    description: "Our research meets the highest standards of scientific rigor and ethical practice.",
   },
   {
     icon: Users,
-    title: "Qualified Faculty",
-    description: "All our teachers are CPE-registered with relevant qualifications at least one level higher than the courses they teach.",
+    title: "Expert Research Team",
+    description: "Collaborate with world-class researchers and scientists with diverse expertise and backgrounds.",
   },
   {
     icon: Clock,
-    title: "Flexible Scheduling",
-    description: "Our programmes are designed with working professionals in mind, offering flexible class schedules.",
+    title: "Flexible Research Programs",
+    description: "Our programmes are designed with working professionals in mind, offering flexible schedules.",
   },
   {
     icon: Award,
-    title: "Industry-Relevant Curriculum",
-    description: "Courses developed in consultation with industry partners to ensure practical, applicable skills.",
+    title: "Industry Partnerships",
+    description: "Strong connections with industry partners ensure practical, impactful research outcomes.",
   },
   {
     icon: CheckCircle,
-    title: "Affordable Education",
-    description: "Quality education at competitive prices, making professional development accessible to all.",
+    title: "Funding Opportunities",
+    description: "Access to research grants and funding to support your innovative projects.",
   },
 ];
 
@@ -41,12 +41,12 @@ const WhyUSCSection = () => {
           <div>
             <span className="text-primary text-sm font-medium uppercase tracking-wider">Why Choose Us</span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-2 mb-6">
-              Your Partner in Professional Development
+              Your Partner in Research Excellence
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              United Seas College is committed to providing client-focused education that 
-              prepares students for success in the modern workplace. Our mission is lifelong 
-              skills development for the betterment of society.
+              United Seas Research Institute is committed to advancing knowledge and innovation 
+              that drives real-world impact. Our mission is to foster groundbreaking research 
+              for the betterment of society.
             </p>
 
             <div className="space-y-4">
@@ -65,7 +65,7 @@ const WhyUSCSection = () => {
           </div>
 
           <div className="bg-card rounded-2xl p-8 shadow-elevated">
-            <h3 className="text-xl font-serif font-bold text-foreground mb-6">More Reasons to Join USC</h3>
+            <h3 className="text-xl font-serif font-bold text-foreground mb-6">More Reasons to Join USRI</h3>
             <div className="space-y-4">
               {features.slice(3).map((feature) => (
                 <div key={feature.title} className="flex items-start gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">

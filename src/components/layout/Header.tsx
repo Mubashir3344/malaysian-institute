@@ -13,10 +13,10 @@ import {
 import { cn } from "@/lib/utils";
 
 const programmes = [
-  { title: "Preparatory Courses", description: "Foundation level studies for academic readiness", href: "/programmes#preparatory" },
-  { title: "Diploma Programmes", description: "Business, Logistics, and Microelectronics", href: "/programmes#diploma" },
-  { title: "Higher Diplomas", description: "Advanced business leadership courses", href: "/programmes#higher-diploma" },
-  { title: "Specialized Tracks", description: "Accounting, Big Data, Network & New Media, HSK", href: "/programmes#specialized" },
+  { title: "Research Foundations", description: "Foundational research methodology and skills", href: "/programmes#preparatory" },
+  { title: "Research Programmes", description: "Business, Technology, and Applied Sciences", href: "/programmes#diploma" },
+  { title: "Advanced Research", description: "Advanced research and leadership programmes", href: "/programmes#higher-diploma" },
+  { title: "Specialized Research", description: "Data Analytics, AI, Network Technologies, Languages", href: "/programmes#specialized" },
 ];
 
 const Header = () => {
@@ -28,17 +28,17 @@ const Header = () => {
       <div className="bg-usc-navy text-primary-foreground">
         <div className="container mx-auto px-4 py-2 flex items-center justify-between text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+6560150851" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+6531064527" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              <span>(+65) 6015-0851</span>
+              <span>(+65) 6531-064527</span>
             </a>
-            <a href="mailto:admin@usc.edu.sg" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:admin@usri.edu.sg" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="h-3.5 w-3.5" />
-              <span>admin@usc.edu.sg</span>
+              <span>admin@usri.edu.sg</span>
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-primary-foreground/70 text-xs">CPE Registered PEI</span>
+            <span className="text-primary-foreground/70 text-xs">Premier Research Institution</span>
           </div>
         </div>
       </div>
@@ -50,10 +50,10 @@ const Header = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <div className="w-12 h-12 rounded-lg gradient-hero flex items-center justify-center shadow-soft group-hover:shadow-card transition-shadow">
-                <span className="text-primary-foreground font-serif font-bold text-xl">USC</span>
+                <span className="text-primary-foreground font-serif font-bold text-xl">USRI</span>
               </div>
               <div className="hidden sm:block">
-                <h1 className="font-serif font-bold text-lg text-foreground leading-tight">United Seas College</h1>
+                <h1 className="font-serif font-bold text-lg text-foreground leading-tight">United Seas Research Institute</h1>
                 <p className="text-xs text-muted-foreground">Pte. Ltd.</p>
               </div>
             </Link>
@@ -79,7 +79,7 @@ const Header = () => {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-sm font-medium">Programmes</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-sm font-medium">Research</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                         {programmes.map((programme) => (
@@ -104,7 +104,7 @@ const Header = () => {
                   <NavigationMenuItem>
                     <NavigationMenuLink asChild>
                       <Link to="/student-support" className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
-                        Student Support
+                        Researcher Support
                       </Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
@@ -120,7 +120,7 @@ const Header = () => {
               </NavigationMenu>
 
               <Button variant="gold" size="sm" className="ml-4" asChild>
-                <Link to="/programmes">Apply Now</Link>
+                <Link to="/programmes">Join Our Research</Link>
               </Button>
             </div>
 
@@ -145,17 +145,17 @@ const Header = () => {
                 About Us
               </Link>
               <Link to="/programmes" className="block px-4 py-3 rounded-md hover:bg-muted transition-colors" onClick={() => setMobileMenuOpen(false)}>
-                Programmes
+                Research
               </Link>
               <Link to="/student-support" className="block px-4 py-3 rounded-md hover:bg-muted transition-colors" onClick={() => setMobileMenuOpen(false)}>
-                Student Support
+                Researcher Support
               </Link>
               <Link to="/contact" className="block px-4 py-3 rounded-md hover:bg-muted transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 Contact Us
               </Link>
               <div className="pt-2">
                 <Button variant="gold" className="w-full" asChild>
-                  <Link to="/programmes" onClick={() => setMobileMenuOpen(false)}>Apply Now</Link>
+                  <Link to="/programmes" onClick={() => setMobileMenuOpen(false)}>Join Our Research</Link>
                 </Button>
               </div>
             </div>

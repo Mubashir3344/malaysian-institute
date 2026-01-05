@@ -66,7 +66,7 @@ const Contact = () => {
                 Contact Us
               </h1>
               <p className="text-lg text-primary-foreground/80 leading-relaxed">
-                Have questions about our programmes or need assistance? 
+                Have questions about our research programmes or need assistance? 
                 Our team is here to help you every step of the way.
               </p>
             </div>
@@ -187,8 +187,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Call Us</h3>
-                        <a href="tel:+6560150851" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                          (+65) 6015-0851
+                        <a href="tel:+6531064527" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                          (+65) 6531-064527
                         </a>
                       </div>
                     </CardContent>
@@ -201,8 +201,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
-                        <a href="mailto:admin@usc.edu.sg" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                          admin@usc.edu.sg
+                        <a href="mailto:admin@usri.edu.sg" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                          admin@usri.edu.sg
                         </a>
                       </div>
                     </CardContent>
@@ -235,7 +235,7 @@ const Contact = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="USC Location"
+                      title="USRI Location"
                     />
                   </Card>
                 </div>

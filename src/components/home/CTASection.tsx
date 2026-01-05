@@ -14,11 +14,11 @@ const CTASection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary-foreground mb-6">
-            Ready to Start Your Educational Journey?
+            Ready to Start Your Research Journey?
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed">
-            Take the first step towards advancing your career with our industry-relevant 
-            programmes. Our admissions team is here to guide you through the enrollment process.
+            Take the first step towards advancing your research career with our world-class 
+            programmes. Our research team is here to guide you through the application process.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -31,13 +31,13 @@ const CTASection = () => {
             <Button variant="heroOutline" size="xl" asChild>
               <Link to="/contact">
                 <MessageCircle className="h-5 w-5" />
-                Contact Admissions
+                Contact Research Team
               </Link>
             </Button>
           </div>
 
           <p className="mt-8 text-primary-foreground/60 text-sm">
-            Have questions? Call us at <a href="tel:+6560150851" className="text-accent hover:underline">(+65) 6015-0851</a>
+            Have questions? Call us at <a href="tel:+6531064527" className="text-accent hover:underline">(+65) 6531-064527</a>
           </p>
         </div>
       </div>
