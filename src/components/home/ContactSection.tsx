@@ -7,39 +7,39 @@ const ContactSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-center mb-4">
-            Have a research <em className="italic">challenge</em>?
+            Ready to get <em className="italic">certified</em>?
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Contact SIAA for research support, integrity assurance, professional training, 
-            or institutional partnership inquiries.
+            Contact SREC for certification programs, institutional training, 
+            or ethics consulting inquiries.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-background p-8 border border-border text-center">
               <Mail className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
-              <h3 className="font-serif text-lg mb-2">Registrar</h3>
+              <h3 className="font-serif text-lg mb-2">Dean's Office</h3>
               <a 
-                href="mailto:registrar@siaa-sg.org" 
+                href="mailto:dean@srec-edu.org" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                registrar@siaa-sg.org
+                dean@srec-edu.org
               </a>
-              <p className="text-xs text-muted-foreground mt-2">Student & Account Inquiries</p>
+              <p className="text-xs text-muted-foreground mt-2">Program & Student Inquiries</p>
             </div>
             <div className="bg-background p-8 border border-border text-center">
               <Mail className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
-              <h3 className="font-serif text-lg mb-2">Director</h3>
+              <h3 className="font-serif text-lg mb-2">Board Secretariat</h3>
               <a 
-                href="mailto:director@siaa-sg.org" 
+                href="mailto:board@srec-edu.org" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                director@siaa-sg.org
+                board@srec-edu.org
               </a>
-              <p className="text-xs text-muted-foreground mt-2">Partnerships & Collaborations</p>
+              <p className="text-xs text-muted-foreground mt-2">Partnerships & Institutional</p>
             </div>
             <div className="bg-background p-8 border border-border text-center">
               <Phone className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
-              <h3 className="font-serif text-lg mb-2">Institutional Inquiries</h3>
+              <h3 className="font-serif text-lg mb-2">General Inquiries</h3>
               <a 
                 href="tel:+6531064527" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"

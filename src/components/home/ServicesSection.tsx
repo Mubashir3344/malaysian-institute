@@ -7,23 +7,23 @@ import teamCollaboration from "@/assets/team-collaboration.jpg";
 
 const services = [
   {
-    title: "Research Support",
-    description: "Comprehensive methodology and analytical support for academic research projects",
+    title: "Certification Programs",
+    description: "Structured coursework leading to recognized ethics credentials for researchers",
     image: researchDataScience,
   },
   {
-    title: "Integrity Assurance",
-    description: "Advanced plagiarism prevention and originality verification systems",
+    title: "Institutional Training",
+    description: "Customized ethics workshops and training for universities and research organizations",
     image: researchAppliedScience,
   },
   {
-    title: "Professional Training",
-    description: "Workshops on citation management, AI ethics, and paraphrasing techniques",
+    title: "Ethics Consulting",
+    description: "Expert guidance on research ethics policies, frameworks, and compliance",
     image: teamCollaboration,
   },
   {
-    title: "Institutional Consulting",
-    description: "Strategic support for academic institutions and research centers",
+    title: "Curriculum Development",
+    description: "Custom ethics education materials and course design for institutions",
     image: researchBusiness,
   },
 ];
@@ -38,8 +38,8 @@ const ServicesSection = () => {
               What we <em className="italic">offer</em>
             </h2>
             <p className="text-muted-foreground text-lg max-w-xl">
-              We support academic excellence through research, training, and 
-              integrity assurance services.
+              We support ethical excellence through certification, training, 
+              and consulting services.
             </p>
           </div>
           <Link 

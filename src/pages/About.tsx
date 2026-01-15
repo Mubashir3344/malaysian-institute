@@ -4,24 +4,24 @@ import { Button } from "@/components/ui/button";
 
 const teamMembers = [
   {
-    name: "Dr. Sarah Chen",
-    role: "Director & Chief Research Officer",
-    bio: "With over 20 years in academic research, Dr. Chen leads SIAA's strategic vision and research initiatives across South Asia.",
+    name: "Dr. Julian Chen",
+    role: "Chief Ethics Officer / Dean",
+    bio: "With over 25 years in research ethics and academic leadership, Dr. Chen leads SREC's strategic vision and curriculum development for all certification programs.",
   },
   {
     name: "Prof. Michael Tan",
-    role: "Head of Research Integrity",
-    bio: "Prof. Tan brings extensive expertise in research ethics and publication standards from leading universities in the Asia-Pacific region.",
+    role: "Director of Certification Programs",
+    bio: "Prof. Tan oversees the design and delivery of all SREC certification coursework, ensuring programs meet international standards.",
   },
   {
     name: "Dr. Priya Sharma",
-    role: "Director of Training Programs",
-    bio: "Dr. Sharma designs and delivers professional development programs for researchers across multiple disciplines and institutions.",
+    role: "Head of Institutional Training",
+    bio: "Dr. Sharma leads SREC's institutional partnerships, developing customized ethics training programs for universities and research organizations.",
   },
   {
     name: "Dr. James Wong",
-    role: "Senior Research Analyst",
-    bio: "Dr. Wong leads our analytics team, providing advanced statistical and methodological support for institutional research projects.",
+    role: "Senior Ethics Curriculum Developer",
+    bio: "Dr. Wong develops course materials and assessment frameworks for SREC's certification programs, specializing in data ethics.",
   },
 ];
 
@@ -38,14 +38,13 @@ const About = () => {
                 Our Mission & Vision
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
-                Empowering Global Scholarship Through <em className="italic">Analytical Excellence</em>
+                Certifying Researchers Through <em className="italic">Structured Integrity</em> Coursework
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl">
-                The Singapore Institute of Academic Analytics (SIAA) was established to bridge 
-                the gap between raw data and scholarly achievement. In an era of rapid information 
-                expansion, we provide independent researchers and academic professionals with the 
-                tools, training, and oversight necessary to produce world-class contributions to 
-                the global body of knowledge.
+                The Singapore Research Ethics Council (SREC) was established to address 
+                the growing need for standardized research ethics training and certification. 
+                We equip researchers with the knowledge, skills, and credentials to conduct 
+                ethical research that contributes meaningfully to global scholarship.
               </p>
             </div>
           </div>
@@ -62,38 +61,39 @@ const About = () => {
                 <div className="w-16 h-16 bg-foreground text-background flex items-center justify-center text-2xl font-serif mx-auto mb-6">
                   01
                 </div>
-                <h3 className="text-xl font-serif mb-4">Standardization</h3>
+                <h3 className="text-xl font-serif mb-4">Certification</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To define and promote rigorous benchmarks for academic data analytics 
-                  in South Asian and Global contexts.
+                  To provide recognized credentials that demonstrate a researcher's 
+                  commitment to ethical standards and professional integrity.
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-foreground text-background flex items-center justify-center text-2xl font-serif mx-auto mb-6">
                   02
                 </div>
-                <h3 className="text-xl font-serif mb-4">Integrity</h3>
+                <h3 className="text-xl font-serif mb-4">Education</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To foster a culture of original thinking by providing robust plagiarism 
-                  prevention and awareness frameworks.
+                  To deliver comprehensive coursework that builds practical 
+                  skills in responsible research conduct and ethical decision-making.
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-foreground text-background flex items-center justify-center text-2xl font-serif mx-auto mb-6">
                   03
                 </div>
-                <h3 className="text-xl font-serif mb-4">Innovation</h3>
+                <h3 className="text-xl font-serif mb-4">Institutional Support</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To support boutique research initiatives in Life Sciences, Pedagogy, and 
-                  Professional Entrance Analytics through peer review and technical support.
+                  To assist universities and research organizations in developing 
+                  and maintaining robust ethics frameworks and compliance systems.
                 </p>
               </div>
             </div>
             <div className="max-w-3xl mx-auto mt-16 text-center">
               <p className="text-xl font-serif text-muted-foreground leading-relaxed italic">
-                "At SIAA, we believe that the foundation of a credible research institute is 
-                built on the pillars of Objectivity, Accountability, and Academic Honesty."
+                "At SREC, we believe that ethical research is not just about following rules—
+                it's about cultivating a mindset of integrity that elevates the entire research enterprise."
               </p>
+              <p className="text-sm text-muted-foreground mt-4">— Dr. Julian Chen, Chief Ethics Officer</p>
             </div>
           </div>
         </section>
@@ -107,9 +107,9 @@ const About = () => {
                   Our Mission
                 </h2>
                 <p className="text-2xl md:text-3xl font-serif leading-relaxed">
-                  To elevate academic standards across South Asia and globally through 
-                  research support, integrity assurance, and professional development 
-                  for independent researchers and institutions.
+                  To certify researchers through structured integrity coursework, 
+                  fostering a global community of scholars committed to the highest 
+                  ethical standards.
                 </p>
               </div>
               <div>
@@ -117,14 +117,15 @@ const About = () => {
                   Our Approach
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  We start with understanding. By deeply engaging with researchers, institutions, 
-                  and the evolving academic landscape, we provide targeted solutions that address 
-                  real challenges in scholarly research and publication.
+                  SREC's certification programs combine theoretical foundations with 
+                  practical application. Through case studies, assessments, and 
+                  interactive learning, we ensure that certified researchers can 
+                  navigate real-world ethical challenges.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our multidisciplinary team brings together research methodologists, statisticians, 
-                  ethics experts, and training specialists to deliver comprehensive support for 
-                  South Asian and Global researchers.
+                  Our curriculum is developed by experienced ethics educators and 
+                  reviewed by our Academic Standards Committee to ensure relevance 
+                  and rigor.
                 </p>
               </div>
             </div>
@@ -135,7 +136,7 @@ const About = () => {
         <section className="py-20 lg:py-32 bg-secondary">
           <div className="container mx-auto px-6 lg:px-12">
             <h2 className="text-3xl md:text-4xl font-serif mb-16">
-              Meet our <em className="italic">Experts</em>
+              Our <em className="italic">Leadership</em>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
               {teamMembers.map((member) => (
@@ -158,15 +159,16 @@ const About = () => {
                 Governance & <em className="italic">Oversight</em>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                SIAA operates under the guidance of our Board of Fellows and Academic Ethics 
-                Committee, ensuring all institutional activities adhere to the highest standards 
-                of academic governance and research integrity.
+                SREC operates under the guidance of our Board of Governors and 
+                Academic Standards Committee, ensuring all certification programs 
+                and institutional activities meet the highest standards of 
+                educational quality and ethical governance.
               </p>
               <Button variant="outline" className="border-foreground">
-                Download SIAA Charter (PDF)
+                Download SREC Charter (PDF)
               </Button>
               <p className="text-sm text-muted-foreground mt-8">
-                Approved by the Board of Fellows, SIAA Singapore
+                Approved by the Board of Governors, SREC Singapore
               </p>
             </div>
           </div>

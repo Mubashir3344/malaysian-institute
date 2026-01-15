@@ -8,11 +8,11 @@ const Footer = () => {
           {/* Logo & Tagline */}
           <div className="lg:col-span-1">
             <Link to="/" className="text-3xl font-heading tracking-tight font-bold">
-              SIAA
+              SREC
             </Link>
             <p className="mt-4 text-background/70 leading-relaxed text-sm">
-              Singapore Institute of Academic Analytics — Boutique Academic Research & 
-              Integrity Hub. Empowering scholarly excellence through data-driven analytics.
+              Singapore Research Ethics Council — Certifying researchers through 
+              structured integrity coursework and professional ethics training.
             </p>
           </div>
 
@@ -23,16 +23,16 @@ const Footer = () => {
             </h4>
             <nav className="flex flex-col gap-3 text-sm">
               <Link to="/about" className="text-background/80 hover:text-background transition-colors">
-                About SIAA
+                About SREC
               </Link>
-              <Link to="/research-areas" className="text-background/80 hover:text-background transition-colors">
-                Research Areas
+              <Link to="/programs" className="text-background/80 hover:text-background transition-colors">
+                Certification Programs
               </Link>
-              <Link to="/academic-integrity" className="text-background/80 hover:text-background transition-colors">
-                Academic Integrity
+              <Link to="/ethics" className="text-background/80 hover:text-background transition-colors">
+                Ethics & Integrity
               </Link>
-              <Link to="/publications" className="text-background/80 hover:text-background transition-colors">
-                Publications
+              <Link to="/resources" className="text-background/80 hover:text-background transition-colors">
+                Resources
               </Link>
               <Link to="/services" className="text-background/80 hover:text-background transition-colors">
                 Services
@@ -47,19 +47,19 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-3 text-sm text-background/80">
               <div>
-                <p className="text-background/50 text-xs mb-1">Registrar</p>
-                <a href="mailto:registrar@siaa-sg.org" className="hover:text-background transition-colors">
-                  registrar@siaa-sg.org
+                <p className="text-background/50 text-xs mb-1">Dean's Office</p>
+                <a href="mailto:dean@srec-edu.org" className="hover:text-background transition-colors">
+                  dean@srec-edu.org
                 </a>
               </div>
               <div>
-                <p className="text-background/50 text-xs mb-1">Director</p>
-                <a href="mailto:director@siaa-sg.org" className="hover:text-background transition-colors">
-                  director@siaa-sg.org
+                <p className="text-background/50 text-xs mb-1">Board Secretariat</p>
+                <a href="mailto:board@srec-edu.org" className="hover:text-background transition-colors">
+                  board@srec-edu.org
                 </a>
               </div>
               <div>
-                <p className="text-background/50 text-xs mb-1">Institutional Inquiries</p>
+                <p className="text-background/50 text-xs mb-1">General Inquiries</p>
                 <a href="tel:+6531064527" className="hover:text-background transition-colors">
                   +65 3106 4527
                 </a>
@@ -74,7 +74,7 @@ const Footer = () => {
               Registered Office
             </h4>
             <div className="text-sm text-background/80">
-              <p>Singapore Institute of Academic Analytics</p>
+              <p>Singapore Research Ethics Council</p>
               <p className="text-background/60 mt-2">
                 1 Fusionopolis Place, #03-01<br />
                 Galaxis, Singapore 138522
@@ -86,7 +86,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-background/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-background/50">
-            © {new Date().getFullYear()} Singapore Institute of Academic Analytics. All rights reserved.
+            © {new Date().getFullYear()} Singapore Research Ethics Council. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/50">
             <Link to="/privacy" className="hover:text-background transition-colors">
@@ -95,8 +95,8 @@ const Footer = () => {
             <Link to="/terms" className="hover:text-background transition-colors">
               Terms of Use
             </Link>
-            <Link to="/member-portal" className="hover:text-background transition-colors">
-              Member Portal
+            <Link to="/student-portal" className="hover:text-background transition-colors">
+              Student Portal
             </Link>
           </div>
         </div>

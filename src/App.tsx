@@ -6,10 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import ResearchAreas from "./pages/ResearchAreas";
-import AcademicIntegrity from "./pages/AcademicIntegrity";
-import Publications from "./pages/Publications";
-import MemberPortal from "./pages/MemberPortal";
+import Programs from "./pages/Programs";
+import Ethics from "./pages/Ethics";
+import Resources from "./pages/Resources";
+import StudentPortal from "./pages/StudentPortal";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -25,14 +25,16 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/research-areas" element={<ResearchAreas />} />
-          <Route path="/academic-integrity" element={<AcademicIntegrity />} />
-          <Route path="/publications" element={<Publications />} />
-          <Route path="/member-portal" element={<MemberPortal />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/ethics" element={<Ethics />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/student-portal" element={<StudentPortal />} />
           <Route path="/contact" element={<Contact />} />
           {/* Legacy routes redirects */}
-          <Route path="/work" element={<ResearchAreas />} />
-          <Route path="/blog" element={<Publications />} />
+          <Route path="/research-areas" element={<Programs />} />
+          <Route path="/academic-integrity" element={<Ethics />} />
+          <Route path="/publications" element={<Resources />} />
+          <Route path="/member-portal" element={<StudentPortal />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

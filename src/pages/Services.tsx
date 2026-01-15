@@ -5,51 +5,51 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    id: "research-support",
-    title: "Research Support",
-    description: "Comprehensive research methodology and analytical support",
+    id: "certification-programs",
+    title: "Certification Programs",
+    description: "Structured coursework leading to recognized ethics credentials",
     details: [
-      "Research Design & Methodology",
-      "Statistical Analysis & Data Analytics",
-      "Literature Review Support",
-      "Manuscript Preparation",
-      "Publication Strategy",
+      "Professional Ethics in Data Reporting",
+      "Academic Integrity for Postgraduates",
+      "Research Ethics Fundamentals",
+      "Ethics Leadership for Institutions",
+      "Custom Certification Tracks",
     ],
   },
   {
-    id: "integrity-assurance",
-    title: "Integrity Assurance",
-    description: "Ensuring the highest standards of academic integrity",
+    id: "institutional-training",
+    title: "Institutional Training",
+    description: "Customized ethics training for universities and research organizations",
     details: [
-      "Plagiarism Detection & Prevention",
-      "Ethics Review Consultation",
-      "Research Misconduct Prevention",
+      "Department-wide Ethics Workshops",
+      "Ethics Committee Training",
+      "Compliance Officer Programs",
+      "Graduate Student Orientations",
+      "Faculty Development Sessions",
+    ],
+  },
+  {
+    id: "ethics-consulting",
+    title: "Ethics Consulting",
+    description: "Expert guidance on research ethics policies and challenges",
+    details: [
+      "Policy Development & Review",
+      "Ethics Framework Design",
       "Compliance Auditing",
-      "Integrity Policy Development",
+      "Misconduct Investigation Support",
+      "International Standards Alignment",
     ],
   },
   {
-    id: "professional-training",
-    title: "Professional Training",
-    description: "Skill development programs for researchers and academics",
+    id: "curriculum-development",
+    title: "Curriculum Development",
+    description: "Custom ethics education materials for your institution",
     details: [
-      "Research Methodology Workshops",
-      "Academic Writing Skills",
-      "Statistical Software Training",
-      "Publication Ethics Seminars",
-      "Peer Review Training",
-    ],
-  },
-  {
-    id: "institutional-consulting",
-    title: "Institutional Consulting",
-    description: "Strategic support for academic institutions",
-    details: [
-      "Research Quality Assessment",
-      "Policy Development",
-      "Accreditation Support",
-      "Capacity Building Programs",
-      "Research Culture Enhancement",
+      "Course Design & Development",
+      "Assessment Frameworks",
+      "Case Study Collections",
+      "E-Learning Modules",
+      "Training Resource Packages",
     ],
   },
 ];
@@ -64,11 +64,12 @@ const Services = () => {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
-                Our <em className="italic">services</em>
+                Our <em className="italic">Services</em>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                We provide comprehensive academic research support and professional training 
-                services tailored to researchers, academics, and institutions across Asia-Pacific.
+                SREC provides comprehensive ethics education, certification, and 
+                consulting services for researchers, academics, and institutions 
+                committed to upholding the highest standards of research integrity.
               </p>
             </div>
           </div>
@@ -117,11 +118,11 @@ const Services = () => {
         <section className="py-20 lg:py-32 bg-foreground text-background">
           <div className="container mx-auto px-6 lg:px-12 text-center">
             <h2 className="text-3xl md:text-4xl font-serif mb-6">
-              Ready to elevate your <em className="italic">research</em>?
+              Ready to enhance your <em className="italic">ethics program</em>?
             </h2>
             <p className="text-background/70 mb-8 max-w-xl mx-auto">
-              Let's discuss how SIAA can support your academic research 
-              and professional development needs.
+              Let's discuss how SREC can support your institution's 
+              research ethics training and certification needs.
             </p>
             <Button asChild variant="outline" className="border-background text-background hover:bg-background hover:text-foreground">
               <Link to="/contact">Get in Touch</Link>
