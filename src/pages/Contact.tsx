@@ -45,15 +45,16 @@ const Contact = () => {
                   Get in <em className="italic">Touch</em>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-                  Have a research challenge, training need, or institutional inquiry? 
-                  Reach out and our team will respond within 24 hours.
+                  Have questions about our certification programs, institutional 
+                  training, or ethics consulting services? Reach out and our team 
+                  will respond within 24 hours.
                 </p>
 
                 <div className="space-y-8">
-                  {/* Institutional Inquiries */}
+                  {/* General Inquiries */}
                   <div>
                     <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-2">
-                      Institutional Inquiries
+                      General Inquiries
                     </h3>
                     <div className="flex items-center gap-3 mb-2">
                       <Phone className="w-4 h-4 text-muted-foreground" />
@@ -80,13 +81,13 @@ const Contact = () => {
                         <Mail className="w-4 h-4 text-muted-foreground mt-1" />
                         <div>
                           <a 
-                            href="mailto:registrar@siaa-sg.org" 
+                            href="mailto:dean@srec-edu.org" 
                             className="hover:text-muted-foreground transition-colors"
                           >
-                            registrar@siaa-sg.org
+                            dean@srec-edu.org
                           </a>
                           <p className="text-sm text-muted-foreground">
-                            Student & Account Inquiries
+                            Dean's Office & Program Inquiries
                           </p>
                         </div>
                       </div>
@@ -94,13 +95,13 @@ const Contact = () => {
                         <Mail className="w-4 h-4 text-muted-foreground mt-1" />
                         <div>
                           <a 
-                            href="mailto:director@siaa-sg.org" 
+                            href="mailto:board@srec-edu.org" 
                             className="hover:text-muted-foreground transition-colors"
                           >
-                            director@siaa-sg.org
+                            board@srec-edu.org
                           </a>
                           <p className="text-sm text-muted-foreground">
-                            Institutional Partnerships & Research Collaborations
+                            Board Secretariat & Institutional Partnerships
                           </p>
                         </div>
                       </div>
@@ -115,7 +116,7 @@ const Contact = () => {
                     <div className="flex items-start gap-3">
                       <MapPin className="w-4 h-4 text-muted-foreground mt-1" />
                       <div>
-                        <p>Singapore Institute of Academic Analytics</p>
+                        <p>Singapore Research Ethics Council</p>
                         <p className="text-muted-foreground">
                           1 Fusionopolis Place, #03-01<br />
                           Galaxis, Singapore 138522
@@ -168,9 +169,9 @@ const Contact = () => {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="researcher">Researcher</SelectItem>
-                        <SelectItem value="independent-scholar">Independent Scholar</SelectItem>
-                        <SelectItem value="institution-partner">Institution Partner</SelectItem>
-                        <SelectItem value="student">Student</SelectItem>
+                        <SelectItem value="postgraduate">Postgraduate Student</SelectItem>
+                        <SelectItem value="institution-rep">Institution Representative</SelectItem>
+                        <SelectItem value="ethics-officer">Ethics Officer</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
@@ -187,11 +188,11 @@ const Contact = () => {
                         <SelectValue placeholder="Select subject" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="plagiarism-training">Plagiarism Training</SelectItem>
-                        <SelectItem value="research-collaboration">Research Collaboration</SelectItem>
-                        <SelectItem value="institutional-partnership">Institutional Partnership</SelectItem>
-                        <SelectItem value="integrity-tools">Integrity Tools Access</SelectItem>
-                        <SelectItem value="general-inquiry">General Inquiry</SelectItem>
+                        <SelectItem value="certification">Certification Programs</SelectItem>
+                        <SelectItem value="institutional-training">Institutional Training</SelectItem>
+                        <SelectItem value="ethics-consulting">Ethics Consulting</SelectItem>
+                        <SelectItem value="partnership">Partnership Inquiry</SelectItem>
+                        <SelectItem value="general">General Inquiry</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

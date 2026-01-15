@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, User } from "lucide-react";
+import { Menu, X, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -9,9 +9,9 @@ const Header = () => {
 
   const navLinks = [
     { name: "About", href: "/about" },
-    { name: "Research Areas", href: "/research-areas" },
-    { name: "Academic Integrity", href: "/academic-integrity" },
-    { name: "Publications", href: "/publications" },
+    { name: "Certification Programs", href: "/programs" },
+    { name: "Ethics & Integrity", href: "/ethics" },
+    { name: "Resources", href: "/resources" },
     { name: "Services", href: "/services" },
   ];
 
@@ -23,7 +23,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-2xl font-heading tracking-tight font-bold">SIAA</span>
+            <span className="text-2xl font-heading tracking-tight font-bold">SREC</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,9 +44,9 @@ const Header = () => {
           {/* Right Side Actions */}
           <div className="hidden lg:flex items-center gap-4">
             <Button asChild variant="ghost" size="sm">
-              <Link to="/member-portal" className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                Login
+              <Link to="/student-portal" className="flex items-center gap-2">
+                <GraduationCap className="w-4 h-4" />
+                Student Login
               </Link>
             </Button>
             <Button asChild variant="outline" className="border-foreground hover:bg-foreground hover:text-background">
@@ -80,12 +80,12 @@ const Header = () => {
               ))}
               <div className="border-t border-border pt-4 mt-2 space-y-4">
                 <Link
-                  to="/member-portal"
+                  to="/student-portal"
                   className="flex items-center gap-2 text-lg font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <User className="w-5 h-5" />
-                  Member Login
+                  <GraduationCap className="w-5 h-5" />
+                  Student Portal
                 </Link>
                 <Link
                   to="/contact"
