@@ -12,7 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -51,19 +51,13 @@ const Contact = () => {
                 </p>
 
                 <div className="space-y-8">
-                  {/* General Inquiries */}
                   <div>
                     <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-2">
                       General Inquiries
                     </h3>
                     <div className="flex items-center gap-3 mb-2">
-                      <Phone className="w-4 h-4 text-muted-foreground" />
-                      <a 
-                        href="tel:+6531064527" 
-                        className="text-lg hover:text-muted-foreground transition-colors"
-                      >
-                        +65 3106 4527
-                      </a>
+                      <Mail className="w-4 h-4 text-muted-foreground" />
+                      <span className="text-lg">Use the contact form or email dean@srec-edu.org</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm text-muted-foreground">
                       <Clock className="w-4 h-4" />
@@ -118,8 +112,8 @@ const Contact = () => {
                       <div>
                         <p>Singapore Research Ethics Council</p>
                         <p className="text-muted-foreground">
-                          1 Fusionopolis Place, #03-01<br />
-                          Galaxis, Singapore 138522
+                          7 Temasek Boulevard, #12-07<br />
+                          Suntec Tower One, Singapore 038987
                         </p>
                       </div>
                     </div>

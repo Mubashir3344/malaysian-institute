@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -38,15 +38,12 @@ const ContactSection = () => {
               <p className="text-xs text-muted-foreground mt-2">Partnerships & Institutional</p>
             </div>
             <div className="bg-background p-8 border border-border text-center">
-              <Phone className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
-              <h3 className="font-serif text-lg mb-2">General Inquiries</h3>
-              <a 
-                href="tel:+6531064527" 
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                +65 3106 4527
-              </a>
-              <p className="text-xs text-muted-foreground mt-2">Mon–Fri, 9 AM – 5 PM (SGT)</p>
+              <MapPin className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
+              <h3 className="font-serif text-lg mb-2">Registered Office</h3>
+              <div className="text-sm text-muted-foreground">
+                7 Temasek Boulevard, #12-07<br />
+                Suntec Tower One, Singapore 038987
+              </div>
             </div>
           </div>
 
@@ -60,10 +57,12 @@ const ContactSection = () => {
           </div>
 
           <div className="mt-12 text-center">
+          <div className="mt-12 text-center">
             <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
               <MapPin className="w-4 h-4" />
-              <span>1 Fusionopolis Place, #03-01, Galaxis, Singapore 138522</span>
+              <span>7 Temasek Boulevard, #12-07, Suntec Tower One, Singapore 038987</span>
             </div>
+          </div>
           </div>
         </div>
       </div>

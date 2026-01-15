@@ -60,10 +60,9 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-background/50 text-xs mb-1">General Inquiries</p>
-                <a href="tel:+6531064527" className="hover:text-background transition-colors">
-                  +65 3106 4527
-                </a>
-                <p className="text-background/50 text-xs mt-1">Mon–Fri, 9 AM – 5 PM (SGT)</p>
+                <Link to="/contact" className="hover:text-background transition-colors">
+                  Contact form
+                </Link>
               </div>
             </div>
           </div>
@@ -76,8 +75,8 @@ const Footer = () => {
             <div className="text-sm text-background/80">
               <p>Singapore Research Ethics Council</p>
               <p className="text-background/60 mt-2">
-                1 Fusionopolis Place, #03-01<br />
-                Galaxis, Singapore 138522
+                7 Temasek Boulevard, #12-07<br />
+                Suntec Tower One, Singapore 038987
               </p>
             </div>
           </div>
