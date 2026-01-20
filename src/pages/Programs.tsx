@@ -6,64 +6,67 @@ import { Button } from "@/components/ui/button";
 
 const programs = [
   {
-    id: "professional-ethics",
-    title: "Professional Ethics in Data Reporting",
-    level: "Certificate",
+    id: "digital-transformation",
+    title: "Digital Transformation Management",
+    level: "Executive Education",
+    duration: "6 weeks",
+    format: "Blended",
+    description: "A strategic program for organizational leaders managing digital transformation initiatives. Covers change management, technology adoption, organizational alignment, and risk mitigation in digital-first environments.",
+    modules: [
+      "Digital Strategy & Vision",
+      "Change Management in Digital Contexts",
+      "Technology Stack & Implementation",
+      "Organizational Agility & Scaling",
+      "Digital Risk & Compliance Management",
+      "Case Studies: Successful Transformations",
+    ],
+  },
+  {
+    id: "applied-data-ethics",
+    title: "Applied Data Ethics",
+    level: "Post-Graduate Certificate",
     duration: "8 weeks",
     format: "Online / Blended",
-    description: "A comprehensive program covering ethical principles in data collection, analysis, and reporting. Designed for researchers and analysts working with quantitative and qualitative data in academic and professional settings.",
+    description: "An advanced program examining ethical challenges in data science, AI, and analytics. Designed for practitioners who work with sensitive data, algorithmic systems, and AI-driven decision-making in commercial and research contexts.",
     modules: [
-      "Foundations of Research Ethics",
-      "Data Integrity and Validation",
-      "Ethical Data Visualization",
-      "Responsible Reporting Practices",
-      "Case Studies in Data Ethics",
+      "Data Ethics Foundations & Frameworks",
+      "Algorithmic Bias & Fairness",
+      "Privacy, Security, & Data Protection",
+      "Responsible AI & Explainability",
+      "Ethical Data Governance",
+      "Industry Case Studies & Practical Applications",
     ],
   },
   {
-    id: "academic-integrity-postgrad",
-    title: "Academic Integrity for Postgraduates",
-    level: "Certificate",
-    duration: "6 weeks",
-    format: "Online",
-    description: "Essential training for postgraduate researchers on maintaining academic integrity throughout the research lifecycle. From literature review to publication, learn to navigate ethical challenges.",
+    id: "research-methodology",
+    title: "Advanced Research Methodology & Design",
+    level: "Post-Graduate Certificate",
+    duration: "10 weeks",
+    format: "Blended",
+    description: "A comprehensive program for researchers seeking to advance their methodological expertise. Covers quantitative, qualitative, and mixed-methods approaches, with emphasis on rigorous design and contemporary research challenges.",
     modules: [
-      "Understanding Plagiarism and Attribution",
-      "Proper Citation Practices",
-      "Research Methodology Ethics",
-      "Publication Ethics and Authorship",
-      "AI and Academic Integrity",
+      "Research Design Principles & Logic",
+      "Quantitative Methods & Statistical Analysis",
+      "Qualitative Research & Analysis",
+      "Mixed-Methods Integration",
+      "Research Validity & Reliability",
+      "Emerging Methodologies & Innovations",
     ],
   },
   {
-    id: "research-ethics-fundamentals",
-    title: "Research Ethics Fundamentals",
-    level: "Foundation Certificate",
-    duration: "4 weeks",
-    format: "Online",
-    description: "An introductory program for early-career researchers and graduate students. Build a solid foundation in research ethics principles and institutional requirements.",
-    modules: [
-      "Introduction to Research Ethics",
-      "Informed Consent Principles",
-      "Confidentiality and Data Protection",
-      "Conflict of Interest Management",
-      "Institutional Review Processes",
-    ],
-  },
-  {
-    id: "ethics-leadership",
-    title: "Ethics Leadership for Institutions",
-    level: "Advanced Diploma",
+    id: "institutional-research-leadership",
+    title: "Institutional Research Leadership",
+    level: "Executive Education",
     duration: "12 weeks",
     format: "Blended",
-    description: "Designed for department heads, research directors, and ethics committee members. Learn to develop, implement, and oversee institutional ethics frameworks.",
+    description: "Tailored for research directors, senior faculty, and institutional leaders. Develops strategic competencies in research governance, funding acquisition, institutional research culture, and alignment with MQA standards.",
     modules: [
-      "Ethics Policy Development",
-      "Building Ethics Culture",
-      "Compliance and Oversight Systems",
-      "Investigating Misconduct",
-      "International Ethics Standards",
-      "Leading Ethics Committees",
+      "Research Strategy & Vision Setting",
+      "Research Governance & Ethics",
+      "Funding & Research Partnerships",
+      "Building Research Culture & Excellence",
+      "Institutional Research Compliance",
+      "Strategic Leadership in Higher Education",
     ],
   },
 ];
@@ -78,14 +81,15 @@ const Programs = () => {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl">
               <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
-                SREC Certification Programs
+                GIAR Professional Programs
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
-                Certification <em className="italic">Programs</em>
+                Executive & Post-Graduate <em className="italic">Programs</em>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                SREC offers structured coursework and certification programs designed to 
-                equip researchers with the knowledge and credentials to conduct ethical research.
+                GIAR offers specialized executive education and post-graduate certificates 
+                in emerging fields. Our programs are designed for professionals seeking advanced 
+                expertise, strategic leadership capability, and credentials aligned with MQA standards.
               </p>
             </div>
           </div>
@@ -146,11 +150,12 @@ const Programs = () => {
             <div className="max-w-3xl mx-auto text-center">
               <Award className="w-12 h-12 mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-serif mb-6">
-                Ready to <em className="italic">Get Certified</em>?
+                Enroll in a <em className="italic">GIAR Program</em>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Contact our admissions team to learn more about enrollment, 
-                program schedules, and institutional partnerships.
+                Our programs are open to professionals, academics, and organizational leaders 
+                across Southeast Asia. Contact our admissions team to discuss program fit, 
+                cohort schedules, and executive learning options.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild>

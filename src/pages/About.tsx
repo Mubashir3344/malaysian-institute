@@ -4,24 +4,24 @@ import { Button } from "@/components/ui/button";
 
 const teamMembers = [
   {
-    name: "Dr. Julian Chen",
-    role: "Chief Ethics Officer / Dean",
-    bio: "With over 25 years in research ethics and academic leadership, Dr. Chen leads SREC's strategic vision and curriculum development for all certification programs.",
+    name: "Prof. Dr. Azlan Malik",
+    role: "Director & Founder",
+    bio: "With over 30 years in applied research and institutional leadership, Prof. Dr. Malik established GIAR to address Southeast Asia's need for rigorous research methodologies and ethical governance.",
   },
   {
-    name: "Prof. Michael Tan",
-    role: "Director of Certification Programs",
-    bio: "Prof. Tan oversees the design and delivery of all SREC certification coursework, ensuring programs meet international standards.",
+    name: "Dr. Siti Nurul Hassan",
+    role: "Deputy Director, Research & Innovation",
+    bio: "Dr. Hassan oversees GIAR's research initiatives and postgraduate programs, ensuring alignment with MQA standards and international best practices.",
   },
   {
-    name: "Dr. Priya Sharma",
-    role: "Head of Institutional Training",
-    bio: "Dr. Sharma leads SREC's institutional partnerships, developing customized ethics training programs for universities and research organizations.",
+    name: "Assoc. Prof. Rajesh Gupta",
+    role: "Head of Professional Development",
+    bio: "Assoc. Prof. Gupta leads GIAR's executive education programs, partnering with industry leaders to design niche professional development courses.",
   },
   {
-    name: "Dr. James Wong",
-    role: "Senior Ethics Curriculum Developer",
-    bio: "Dr. Wong develops course materials and assessment frameworks for SREC's certification programs, specializing in data ethics.",
+    name: "Dr. Fatimah Yusof",
+    role: "Academic Integrity Officer",
+    bio: "Dr. Yusof develops and implements GIAR's comprehensive academic integrity policies, ensuring compliance with MQA frameworks and institutional standards.",
   },
 ];
 
@@ -38,13 +38,14 @@ const About = () => {
                 Our Mission & Vision
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
-                Certifying Researchers Through <em className="italic">Structured Integrity</em> Coursework
+                Advancing <em className="italic">Applied Research</em> Through Ethical Excellence
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl">
-                The Singapore Research Ethics Council (SREC) was established to address 
-                the growing need for standardized research ethics training and certification. 
-                We equip researchers with the knowledge, skills, and credentials to conduct 
-                ethical research that contributes meaningfully to global scholarship.
+                The Global Institute of Applied Research (GIAR) was established to advance 
+                rigorous, ethically-grounded research and professional development across 
+                Southeast Asia. We equip researchers, educators, and professionals with the 
+                knowledge and credentials to conduct transformative research aligned with 
+                Malaysian Qualifications Agency (MQA) standards and international excellence.
               </p>
             </div>
           </div>
@@ -61,39 +62,39 @@ const About = () => {
                 <div className="w-16 h-16 bg-foreground text-background flex items-center justify-center text-2xl font-serif mx-auto mb-6">
                   01
                 </div>
-                <h3 className="text-xl font-serif mb-4">Certification</h3>
+                <h3 className="text-xl font-serif mb-4">Research Excellence</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To provide recognized credentials that demonstrate a researcher's 
-                  commitment to ethical standards and professional integrity.
+                  To conduct and promote high-impact applied research aligned with 
+                  MQA frameworks and international standards of rigor and integrity.
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-foreground text-background flex items-center justify-center text-2xl font-serif mx-auto mb-6">
                   02
                 </div>
-                <h3 className="text-xl font-serif mb-4">Education</h3>
+                <h3 className="text-xl font-serif mb-4">Professional Development</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To deliver comprehensive coursework that builds practical 
-                  skills in responsible research conduct and ethical decision-making.
+                  To deliver executive and postgraduate programs that build expertise 
+                  in emerging fields like digital transformation and applied data ethics.
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-foreground text-background flex items-center justify-center text-2xl font-serif mx-auto mb-6">
                   03
                 </div>
-                <h3 className="text-xl font-serif mb-4">Institutional Support</h3>
+                <h3 className="text-xl font-serif mb-4">Ethical Governance</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To assist universities and research organizations in developing 
-                  and maintaining robust ethics frameworks and compliance systems.
+                  To support institutions in establishing and maintaining academic 
+                  integrity frameworks compliant with MQA standards and best practices.
                 </p>
               </div>
             </div>
             <div className="max-w-3xl mx-auto mt-16 text-center">
               <p className="text-xl font-serif text-muted-foreground leading-relaxed italic">
-                "At SREC, we believe that ethical research is not just about following rules—
-                it's about cultivating a mindset of integrity that elevates the entire research enterprise."
+                "At GIAR, we believe applied research creates meaningful impact when grounded 
+                in rigorous methodology and unwavering ethical standards."
               </p>
-              <p className="text-sm text-muted-foreground mt-4">— Dr. Julian Chen, Chief Ethics Officer</p>
+              <p className="text-sm text-muted-foreground mt-4">— Prof. Dr. Azlan Malik, Founder & Director</p>
             </div>
           </div>
         </section>
@@ -106,10 +107,10 @@ const About = () => {
                 <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
                   Our Mission
                 </h2>
-                <p className="text-2xl md:text-3xl font-serif leading-relaxed">
-                  To certify researchers through structured integrity coursework, 
-                  fostering a global community of scholars committed to the highest 
-                  ethical standards.
+                <p clfoster excellence in applied research and professional development 
+                  acrassName="text-2xl md:text-3xl font-serif leading-relaxed">
+                  To oss Southeast Asia, grounded in ethical principles and aligned 
+                  with Malaysian Qualifications Agency (MQA) standards.
                 </p>
               </div>
               <div>
@@ -117,14 +118,13 @@ const About = () => {
                   Our Approach
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  SREC's certification programs combine theoretical foundations with 
-                  practical application. Through case studies, assessments, and 
-                  interactive learning, we ensure that certified researchers can 
-                  navigate real-world ethical challenges.
+                  GIAR's programs combine rigorous methodology with real-world application. 
+                  Through research partnerships, executive seminars, and integrated projects, 
+                  we ensure participants develop both academic depth and practical capability.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our curriculum is developed by experienced ethics educators and 
-                  reviewed by our Academic Standards Committee to ensure relevance 
+                  All our offerings are developed by experienced researchers and reviewed 
+                  against MQA standards to ensonal best practicesby our Academic Standards Committee to ensure relevance 
                   and rigor.
                 </p>
               </div>
@@ -151,24 +151,24 @@ const About = () => {
           </div>
         </section>
 
-        {/* Board Approval */}
+        {/* MQA Alignment */}
         <section className="py-20 lg:py-32">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl font-serif mb-8">
-                Governance & <em className="italic">Oversight</em>
+                MQA Compliance & <em className="italic">Governance</em>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                SREC operates under the guidance of our Board of Governors and 
-                Academic Standards Committee, ensuring all certification programs 
-                and institutional activities meet the highest standards of 
-                educational quality and ethical governance.
+                GIAR operates under the guidance of our Board of Trustees and Academic 
+                Council, ensuring all research initiatives, programs, and institutional 
+                activities are aligned with Malaysian Qualifications Agency (MQA) standards 
+                and international benchmarks for research excellence.
               </p>
               <Button variant="outline" className="border-foreground">
-                Download SREC Charter (PDF)
+                MQA Compliance Framework (PDF)
               </Button>
               <p className="text-sm text-muted-foreground mt-8">
-                Approved by the Board of Governors, SREC Singapore
+                Established in accordance with MQA guidelines for private higher learning institutions
               </p>
             </div>
           </div>

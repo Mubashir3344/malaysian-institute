@@ -9,10 +9,14 @@ const Header = () => {
 
   const navLinks = [
     { name: "About", href: "/about" },
-    { name: "Certification Programs", href: "/programs" },
-    { name: "Ethics & Integrity", href: "/ethics" },
-    { name: "Resources", href: "/resources" },
-    { name: "Services", href: "/services" },
+    { name: "Faculty & Staff", href: "/faculty" },
+    { name: "Programs", href: "/programs" },
+    { name: "Research", href: "/research" },
+    { name: "Publications", href: "/publications" },
+    { name: "Academic Integrity", href: "/ethics" },
+    { name: "News & Events", href: "/news" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Careers", href: "/careers" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,7 +27,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-2xl font-heading tracking-tight font-bold">SREC</span>
+            <span className="text-2xl font-heading tracking-tight font-bold">GIAR</span>
           </Link>
 
           {/* Desktop Navigation */}
