@@ -88,8 +88,8 @@ const StudentPortal = () => {
                 <div className="mt-6 pt-6 border-t border-border text-center">
                   <p className="text-sm text-muted-foreground">
                     Forgot your password?{" "}
-                    <a href="mailto:dean@srec-edu.org" className="text-foreground hover:underline">
-                      Contact the Dean's Office
+                    <a href="mailto:director@giar.my" className="text-foreground hover:underline">
+                      Contact the Director's Office
                     </a>
                   </p>
                 </div>

@@ -57,7 +57,7 @@ const Contact = () => {
                     </h3>
                     <div className="flex items-center gap-3 mb-2">
                       <Mail className="w-4 h-4 text-muted-foreground" />
-                      <span className="text-lg">Use the contact form or email dean@srec-edu.org</span>
+                      <span className="text-lg">Use the contact form or email director@giar.my</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm text-muted-foreground">
                       <Clock className="w-4 h-4" />
@@ -75,13 +75,13 @@ const Contact = () => {
                         <Mail className="w-4 h-4 text-muted-foreground mt-1" />
                         <div>
                           <a 
-                            href="mailto:dean@srec-edu.org" 
+                            href="mailto:director@giar.my" 
                             className="hover:text-muted-foreground transition-colors"
                           >
-                            dean@srec-edu.org
+                            director@giar.my
                           </a>
                           <p className="text-sm text-muted-foreground">
-                            Dean's Office & Program Inquiries
+                            Director's Office & Program Inquiries
                           </p>
                         </div>
                       </div>
@@ -89,13 +89,13 @@ const Contact = () => {
                         <Mail className="w-4 h-4 text-muted-foreground mt-1" />
                         <div>
                           <a 
-                            href="mailto:board@srec-edu.org" 
+                            href="mailto:partnerships@giar.my" 
                             className="hover:text-muted-foreground transition-colors"
                           >
-                            board@srec-edu.org
+                            partnerships@giar.my
                           </a>
                           <p className="text-sm text-muted-foreground">
-                            Board Secretariat & Institutional Partnerships
+                            Partnerships & Institutional Collaboration
                           </p>
                         </div>
                       </div>
@@ -110,10 +110,9 @@ const Contact = () => {
                     <div className="flex items-start gap-3">
                       <MapPin className="w-4 h-4 text-muted-foreground mt-1" />
                       <div>
-                        <p>Singapore Research Ethics Council</p>
+                        <p>Global Institute of Applied Research (GIAR)</p>
                         <p className="text-muted-foreground">
-                          7 Temasek Boulevard, #12-07<br />
-                          Suntec Tower One, Singapore 038987
+                          Kuala Lumpur, Malaysia
                         </p>
                       </div>
                     </div>

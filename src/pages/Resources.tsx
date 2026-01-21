@@ -8,21 +8,21 @@ const resources = [
     title: "Professional Ethics in Data Reporting: A Practitioner's Guide",
     type: "Course Guide",
     status: "Available",
-    authors: "Dr. Julian Chen, SREC Faculty",
+    authors: "Dr. Julian Chen, GIAR Faculty",
     abstract: "Comprehensive coursebook for the Professional Ethics in Data Reporting certification program, covering principles and practical applications.",
   },
   {
     title: "Academic Integrity for the Digital Age",
     type: "Whitepaper",
     status: "Available",
-    authors: "SREC Research Team",
+    authors: "GIAR Research Team",
     abstract: "Examination of evolving challenges in academic integrity posed by AI tools, digital collaboration, and online publishing.",
   },
   {
     title: "Institutional Ethics Framework Template",
     type: "Template",
     status: "Available",
-    authors: "SREC Policy Division",
+    authors: "GIAR Policy & Research Division",
     abstract: "Customizable framework for institutions seeking to develop or enhance their research ethics policies and oversight structures.",
   },
   {
@@ -36,14 +36,14 @@ const resources = [
     title: "Citation Ethics and Attribution Standards",
     type: "Reference Guide",
     status: "Available",
-    authors: "SREC Academic Standards Committee",
+    authors: "GIAR Academic Excellence Committee",
     abstract: "Detailed guide on proper citation practices across APA, Harvard, Vancouver, and other major citation styles.",
   },
   {
     title: "Research Integrity Self-Assessment Tool",
     type: "Assessment",
     status: "Available",
-    authors: "SREC Certification Board",
+    authors: "GIAR Programs & Development Board",
     abstract: "Self-assessment instrument for researchers to evaluate their understanding of research integrity principles before certification.",
   },
 ];
@@ -58,13 +58,13 @@ const Resources = () => {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl">
               <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
-                SREC Resources
+                GIAR Resources
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
                 Learning <em className="italic">Resources</em>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                SREC provides educational materials, guides, and tools to support 
+                GIAR provides educational materials, guides, and tools to support 
                 researchers in their journey toward ethical excellence.
               </p>
             </div>
@@ -109,7 +109,7 @@ const Resources = () => {
                 Need Custom <em className="italic">Training Materials</em>?
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                SREC develops bespoke ethics training resources for institutions 
+                GIAR develops bespoke professional development and research resources for institutions 
                 and research organizations. Contact us to discuss your needs.
               </p>
               <Link 

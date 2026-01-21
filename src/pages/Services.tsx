@@ -67,9 +67,9 @@ const Services = () => {
                 Our <em className="italic">Services</em>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                SREC provides comprehensive ethics education, certification, and 
-                consulting services for researchers, academics, and institutions 
-                committed to upholding the highest standards of research integrity.
+                GIAR provides comprehensive professional development, institutional research services, 
+                and consulting expertise for researchers, academics, and institutions 
+                committed to advancing research excellence and institutional development.
               </p>
             </div>
           </div>
@@ -121,8 +121,8 @@ const Services = () => {
               Ready to enhance your <em className="italic">ethics program</em>?
             </h2>
             <p className="text-background/70 mb-8 max-w-xl mx-auto">
-              Let's discuss how SREC can support your institution's 
-              research ethics training and certification needs.
+              Let's discuss how GIAR can support your institution's 
+              professional development and research advancement needs.
             </p>
             <Button asChild variant="outline" className="border-background text-background hover:bg-background hover:text-foreground">
               <Link to="/contact">Get in Touch</Link>
