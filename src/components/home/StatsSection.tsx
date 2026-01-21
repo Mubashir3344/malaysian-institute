@@ -1,26 +1,28 @@
 const stats = [
-  { number: "500+", label: "Researchers Trained" },
-  { number: "120+", label: "Institutions Served" },
-  { number: "25", label: "Expert Consultants" },
-  { number: "15+", label: "Years of Excellence" },
+  { number: "500+", label: "Program Graduates" },
+  { number: "40+", label: "Partner Institutions" },
+  { number: "4", label: "Research Centers" },
+  { number: "100+", label: "Published Works" },
 ];
 
 const StatsSection = () => {
   return (
-    <section className="py-20 lg:py-32">
+    <section className="py-20 lg:py-32 bg-secondary">
       <div className="container mx-auto px-6 lg:px-12">
-        <h2 className="text-center text-sm font-medium uppercase tracking-wider text-muted-foreground mb-16">
-          Our Impact
-        </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-5xl md:text-6xl lg:text-7xl font-serif mb-4">
-                {stat.number}
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-center text-3xl md:text-4xl font-serif mb-16">
+            By the <em className="italic">Numbers</em>
+          </h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center group">
+                <div className="text-5xl md:text-6xl lg:text-7xl font-serif mb-4 group-hover:text-foreground transition-colors">
+                  {stat.number}
+                </div>
+                <p className="text-muted-foreground text-sm md:text-base">{stat.label}</p>
               </div>
-              <p className="text-muted-foreground">{stat.label}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -3,19 +3,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "SIAA's research integrity training transformed how our faculty approaches ethical research. Their expertise is unmatched in the region.",
-    author: "Prof. David Lim",
-    role: "Dean of Research, National University",
+    quote: "GIAR's research methodology training has elevated the quality of our institutional research programs. Their practical approach makes rigorous methods accessible to our teams.",
+    author: "Prof. Ahmad Hassan",
+    role: "Director of Institutional Research, University of Malaya",
   },
   {
-    quote: "The analytics support we received from SIAA significantly improved our research outcomes. Their methodological guidance was invaluable.",
-    author: "Dr. Priya Sharma",
-    role: "Research Director, Institute of Technology",
+    quote: "The digital transformation research conducted by GIAR provided actionable insights that directly informed our organizational strategy. Excellent work.",
+    author: "Dr. Siti Noor",
+    role: "Chief Innovation Officer, Regional Bank",
   },
   {
-    quote: "Working with SIAA elevated our institution's research standards. Their comprehensive approach to integrity assurance is exactly what we needed.",
-    author: "Prof. Lisa Wong",
-    role: "Vice Provost, Regional University",
+    quote: "GIAR's commitment to research ethics and data ethics has become a benchmark for our institution. Their guidance has strengthened our governance structures significantly.",
+    author: "Prof. Rajesh Kumar",
+    role: "Deputy Vice Chancellor, Technology Institute",
   },
 ];
 

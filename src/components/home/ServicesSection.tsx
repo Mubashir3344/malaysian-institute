@@ -7,65 +7,66 @@ import teamCollaboration from "@/assets/team-collaboration.jpg";
 
 const services = [
   {
-    title: "Certification Programs",
-    description: "Structured coursework leading to recognized ethics credentials for researchers",
+    title: "Professional Programs",
+    description: "Executive and postgraduate programs in digital transformation, data ethics, research methodology, and institutional leadership",
     image: researchDataScience,
+    link: "/programs",
   },
   {
-    title: "Institutional Training",
-    description: "Customized ethics workshops and training for universities and research organizations",
+    title: "Research & Collaboration",
+    description: "Advanced research projects, collaborative partnerships, and research capacity building across our four specialized centers",
     image: researchAppliedScience,
+    link: "/research",
   },
   {
-    title: "Ethics Consulting",
-    description: "Expert guidance on research ethics policies, frameworks, and compliance",
+    title: "Academic Integrity",
+    description: "Research ethics, academic integrity policies, and institutional compliance support grounded in Malaysian standards",
     image: teamCollaboration,
+    link: "/ethics",
   },
   {
-    title: "Curriculum Development",
-    description: "Custom ethics education materials and course design for institutions",
+    title: "Institutional Partnerships",
+    description: "Strategic partnerships with universities, corporations, and organizations for sustained research and professional development",
     image: researchBusiness,
+    link: "/partnerships",
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section className="py-20 lg:py-32">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4">
-              What we <em className="italic">offer</em>
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-xl">
-              We support ethical excellence through certification, training, 
-              and consulting services.
-            </p>
-          </div>
-          <Link 
-            to="/services" 
-            className="inline-flex items-center gap-2 text-sm font-medium hover:gap-4 transition-all"
-          >
-            Explore our services <ArrowRight size={16} />
-          </Link>
+        <div className="max-w-4xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4">
+            Core <em className="italic">Offerings</em>
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            From research excellence to professional development, we provide comprehensive 
+            services advancing institutions and individuals across Southeast Asia.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service) => (
             <Link
               key={service.title}
-              to="/services"
-              className="group block"
+              to={service.link}
+              className="group block overflow-hidden border border-border hover:border-foreground transition-all"
             >
-              <div className="overflow-hidden mb-6">
+              <div className="overflow-hidden h-48 md:h-56 bg-secondary">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="text-xl md:text-2xl font-serif mb-2">{service.title}</h3>
-              <p className="text-muted-foreground">{service.description}</p>
+              <div className="p-8">
+                <h3 className="text-xl md:text-2xl font-serif mb-3 group-hover:text-foreground transition-colors">{service.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">{service.description}</p>
+                <div className="inline-flex items-center gap-2 text-sm font-medium text-foreground group-hover:gap-3 transition-all">
+                  Learn more <ArrowRight size={16} />
+                </div>
+              </div>
             </Link>
           ))}
         </div>

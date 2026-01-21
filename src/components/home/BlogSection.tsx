@@ -1,24 +1,27 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 
 const resources = [
   {
-    title: "Professional Ethics in Data Reporting: A Practitioner's Guide",
-    status: "Available",
-    type: "Course Guide",
-    slug: "data-ethics-guide",
+    title: "Latest News: GIAR Launches Applied Data Ethics Program",
+    date: "January 20, 2026",
+    excerpt: "Introducing our new postgraduate program focused on algorithmic fairness and responsible AI implementation across Southeast Asia.",
+    category: "News",
+    slug: "news",
   },
   {
-    title: "Academic Integrity for the Digital Age",
-    status: "Available",
-    type: "Whitepaper",
-    slug: "digital-integrity",
+    title: "Research Insight: Digital Transformation in Malaysian Organizations",
+    date: "January 10, 2026",
+    excerpt: "Key findings from our research centers examining digital transformation adoption, barriers, and success factors in the region.",
+    category: "Research",
+    slug: "news",
   },
   {
-    title: "Ethics Case Studies in STEM Research",
-    status: "Forthcoming Q2 2026",
-    type: "Case Study Collection",
-    slug: "stem-case-studies",
+    title: "Institutional Research Excellence: Best Practices Guide",
+    date: "December 15, 2025",
+    excerpt: "Comprehensive guide on building and maintaining research excellence in higher education institutions.",
+    category: "Resources",
+    slug: "resources",
   },
 ];
 
@@ -26,48 +29,52 @@ const BlogSection = () => {
   return (
     <section className="py-20 lg:py-32">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-end justify-between mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif">
-            Learning <em className="italic">Resources</em>
+        <div className="max-w-4xl mx-auto mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4">
+            Latest <em className="italic">Updates</em>
           </h2>
-          <Link 
-            to="/resources" 
-            className="hidden md:inline-flex items-center gap-2 text-sm font-medium hover:gap-4 transition-all"
-          >
-            View all resources <ArrowRight size={16} />
-          </Link>
+          <p className="text-lg text-muted-foreground">
+            News, research insights, and resources from GIAR.
+          </p>
         </div>
 
-        <div className="space-y-0 divide-y divide-border">
+        <div className="space-y-0 divide-y divide-border max-w-4xl mx-auto">
           {resources.map((resource) => (
             <Link
-              key={resource.slug}
-              to="/resources"
-              className="group block py-8 first:pt-0 last:pb-0"
+              key={resource.slug + resource.title}
+              to={`/${resource.slug}`}
+              className="group block py-8 first:pt-0 last:pb-0 hover:bg-secondary/50 px-4 -mx-4 transition-colors"
             >
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-serif group-hover:text-muted-foreground transition-colors">
-                    {resource.title}
-                  </h3>
-                </div>
-                <div className="flex items-center gap-4 text-sm text-muted-foreground shrink-0">
-                  <span className="px-2 py-1 bg-secondary text-xs font-medium uppercase tracking-wider">
-                    {resource.type}
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 bg-secondary border border-border text-xs font-medium uppercase tracking-wider rounded">
+                    {resource.category}
                   </span>
-                  <span>{resource.status}</span>
+                  <span className="text-xs text-muted-foreground">{resource.date}</span>
+                </div>
+                <h3 className="text-lg md:text-xl font-serif group-hover:text-foreground transition-colors">
+                  {resource.title}
+                </h3>
+                <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                  {resource.excerpt}
+                </p>
+                <div className="inline-flex items-center gap-2 text-sm font-medium text-foreground group-hover:gap-3 transition-all">
+                  Read more <ArrowRight size={16} />
                 </div>
               </div>
             </Link>
           ))}
         </div>
 
-        <Link 
-          to="/resources" 
-          className="md:hidden inline-flex items-center gap-2 text-sm font-medium mt-8 hover:gap-4 transition-all"
-        >
-          View all resources <ArrowRight size={16} />
-        </Link>
+        <div className="max-w-4xl mx-auto mt-12 text-center">
+          <Link 
+            to="/news" 
+            className="inline-flex items-center gap-2 text-sm font-medium hover:gap-3 transition-all"
+          >
+            <BookOpen size={18} />
+            View All News & Events
+          </Link>
+        </div>
       </div>
     </section>
   );
