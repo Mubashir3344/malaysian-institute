@@ -156,7 +156,7 @@ const CodeOfConduct = () => {
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Violations of this Code may be reported to ethics@giar-research.my",
+                    "Violations of this Code may be reported to ethics@giar.my",
                     "All reports will be treated seriously and investigated promptly",
                     "Retaliation against individuals who report concerns is prohibited",
                     "Investigations will be conducted fairly and confidentially",
@@ -178,7 +178,7 @@ const CodeOfConduct = () => {
                   please contact our Ethics Committee:
                 </p>
                 <div className="space-y-2 text-muted-foreground text-sm">
-                  <p><strong>Email:</strong> ethics@giar-research.my</p>
+                  <p><strong>Email:</strong> ethics@giar.my</p>
                   <p><strong>Phone:</strong> +60 3-xxxx-xxxx</p>
                   <p><strong>Address:</strong> GIAR, Kuala Lumpur, Malaysia</p>
                 </div>

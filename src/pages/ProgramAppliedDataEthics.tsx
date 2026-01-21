@@ -149,7 +149,7 @@ const AppliedDataEthics = () => {
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground mt-8">
-                Contact: Assoc. Prof. Muhammad Rashid (m.rashid@giar-research.my)
+                Contact: Assoc. Prof. Muhammad Rashid (m.rashid@giar.my)
               </p>
             </div>
           </div>

@@ -70,7 +70,7 @@ Limited scholarships are available for candidates from Malaysian universities an
 
 **Next Steps:**
 
-Researchers and institutional leaders interested in GIAR research initiatives, collaborative projects, or scholarship applications are encouraged to contact our Deputy Director at siti.hassan@giar-research.my.
+Researchers and institutional leaders interested in GIAR research initiatives, collaborative projects, or scholarship applications are encouraged to contact our Deputy Director at siti.hassan@giar.my.
 
 These partnerships underscore GIAR's commitment to advancing rigorous, ethical applied research and supporting the professional development of Southeast Asia's emerging research leaders.`,
     author: "Dr. Siti Nurul Hassan, Deputy Director",
@@ -106,7 +106,7 @@ Designed for organizational leaders, department heads, and strategic managers, t
 **Enrollment:**
 Cohorts begin quarterly (Q1, Q2, Q3, Q4 2025). Early-bird registration for Q1 2025 cohort closes December 31, 2024.
 
-Organizations can also arrange customized in-house programs. For details, contact our Professional Development team at rajesh.gupta@giar-research.my.
+Organizations can also arrange customized in-house programs. For details, contact our Professional Development team at rajesh.gupta@giar.my.
 
 This program reflects GIAR's commitment to equipping Southeast Asia's leaders with the knowledge and skills to navigate rapid technological change while maintaining organizational stability, ethical practices, and human-centered leadership.`,
     author: "Assoc. Prof. Rajesh Gupta, Head of Professional Development",

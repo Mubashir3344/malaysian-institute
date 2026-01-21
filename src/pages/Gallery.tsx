@@ -125,7 +125,7 @@ const Gallery = () => {
               </p>
               <p className="text-sm opacity-75">
                 For high-resolution images or specific photography requests, 
-                please contact communications@giar-research.my
+                please contact communications@giar.my
               </p>
             </div>
           </div>
@@ -137,7 +137,7 @@ const Gallery = () => {
             <div className="max-w-3xl mx-auto text-center text-sm text-muted-foreground">
               <p>
                 All images © Global Institute of Applied Research (GIAR). 
-                Usage permitted with attribution. For licensing inquiries, contact communications@giar-research.my
+                Usage permitted with attribution. For licensing inquiries, contact communications@giar.my
               </p>
             </div>
           </div>

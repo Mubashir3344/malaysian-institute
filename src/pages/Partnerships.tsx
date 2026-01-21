@@ -282,7 +282,7 @@ const Partnerships = () => {
                 asChild
                 className="bg-background text-foreground hover:bg-secondary"
               >
-                <a href="mailto:partnerships@giar-research.my">Contact Partnerships Team</a>
+                <a href="mailto:partnerships@giar.my">Contact Partnerships Team</a>
               </Button>
             </div>
           </div>

@@ -145,7 +145,7 @@ const PrivacyPolicy = () => {
                   </li>
                 </ul>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  To exercise these rights, please contact us at privacy@giar-research.my.
+                  To exercise these rights, please contact us at privacy@giar.my.
                 </p>
               </div>
 
@@ -153,7 +153,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-2xl font-serif mb-4">Contact Us</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   If you have questions about this Privacy Policy or our privacy practices, 
-                  please contact us at privacy@giar-research.my or write to us at our office 
+                  please contact us at privacy@giar.my or write to us at our office 
                   in Kuala Lumpur, Malaysia.
                 </p>
               </div>

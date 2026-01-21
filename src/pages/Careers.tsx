@@ -172,7 +172,7 @@ const Careers = () => {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 GIAR also welcomes inquiries from researchers, educators, and professionals 
                 interested in internships, visiting positions, consulting arrangements, and 
-                collaborative projects. Send your CV and proposal to careers@giar-research.my.
+                collaborative projects. Send your CV and proposal to careers@giar.my.
               </p>
               <Button asChild>
                 <a href="/contact">Submit Inquiry</a>

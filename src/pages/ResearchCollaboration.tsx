@@ -135,7 +135,7 @@ const ResearchCollaboration = () => {
                     step: "1",
                     title: "Reach Out",
                     description:
-                      "Contact our research collaboration team at research@giar-research.my with a brief project description and collaboration goals.",
+                      "Contact our research collaboration team at research@giar.my with a brief project description and collaboration goals.",
                   },
                   {
                     step: "2",
@@ -190,7 +190,7 @@ const ResearchCollaboration = () => {
                   asChild
                   className="bg-background text-foreground hover:bg-secondary"
                 >
-                  <a href="mailto:research@giar-research.my">Get in Touch</a>
+                  <a href="mailto:research@giar.my">Get in Touch</a>
                 </Button>
               </div>
             </div>
@@ -209,7 +209,7 @@ const ResearchCollaboration = () => {
                   and grant applications to competitive funding bodies.
                 </p>
                 <p className="text-muted-foreground">
-                  Contact research@giar-research.my to discuss budget frameworks.
+                  Contact research@giar.my to discuss budget frameworks.
                 </p>
               </div>
 

@@ -159,7 +159,7 @@ const TermsOfUse = () => {
                 <h2 className="text-2xl font-serif mb-4">Contact Information</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   If you have questions about these Terms of Use, please contact us at 
-                  legal@giar-research.my or visit our website at giar-research.my.
+                  legal@giar.my or visit our website at giar.my.
                 </p>
               </div>
             </div>

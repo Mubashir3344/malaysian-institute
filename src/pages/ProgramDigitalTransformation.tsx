@@ -141,7 +141,7 @@ const DigitalTransformation = () => {
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground mt-8">
-                Contact: Assoc. Prof. Rajesh Gupta (rajesh.gupta@giar-research.my)
+                Contact: Assoc. Prof. Rajesh Gupta (rajesh.gupta@giar.my)
               </p>
             </div>
           </div>

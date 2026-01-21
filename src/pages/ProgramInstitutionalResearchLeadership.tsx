@@ -149,7 +149,7 @@ const InstitutionalResearchLeadership = () => {
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground mt-8">
-                Contact: Dr. Siti Nurul Hassan (siti.hassan@giar-research.my)
+                Contact: Dr. Siti Nurul Hassan (siti.hassan@giar.my)
               </p>
             </div>
           </div>

@@ -19,20 +19,20 @@ const ContactSection = () => {
               <Mail className="w-8 h-8 mb-4" />
               <h3 className="font-serif text-lg mb-3">Programs & Admissions</h3>
               <a 
-                href="mailto:admissions@giar-research.my" 
+                href="mailto:admissions@giar.my" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                admissions@giar-research.my
+                admissions@giar.my
               </a>
             </div>
             <div className="bg-background p-8 border border-border">
               <Mail className="w-8 h-8 mb-4" />
               <h3 className="font-serif text-lg mb-3">Research & Collaboration</h3>
               <a 
-                href="mailto:research@giar-research.my" 
+                href="mailto:research@giar.my" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                research@giar-research.my
+                research@giar.my
               </a>
             </div>
             <div className="bg-background p-8 border border-border">

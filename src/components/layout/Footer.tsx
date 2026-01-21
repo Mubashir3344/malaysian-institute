@@ -47,14 +47,14 @@ const Footer = () => {
             <div className="flex flex-col gap-3 text-sm text-background/80">
               <div>
                 <p className="text-background/50 text-xs mb-1">Director's Office</p>
-                <a href="mailto:director@giar-research.my" className="hover:text-background transition-colors">
-                  director@giar-research.my
+                <a href="mailto:director@giar.my" className="hover:text-background transition-colors">
+                  director@giar.my
                 </a>
               </div>
               <div>
                 <p className="text-background/50 text-xs mb-1">Admissions</p>
-                <a href="mailto:admissions@giar-research.my" className="hover:text-background transition-colors">
-                  admissions@giar-research.my
+                <a href="mailto:admissions@giar.my" className="hover:text-background transition-colors">
+                  admissions@giar.my
                 </a>
               </div>
               <div>

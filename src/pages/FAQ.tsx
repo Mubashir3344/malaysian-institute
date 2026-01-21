@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "Can organizations arrange customized programs?",
     answer:
-      "Yes. GIAR offers in-house customized programs for organizations with 12+ participants. Programs can be tailored to organizational context and needs. Contact Assoc. Prof. Rajesh Gupta (rajesh.gupta@giar-research.my) for corporate training inquiries.",
+      "Yes. GIAR offers in-house customized programs for organizations with 12+ participants. Programs can be tailored to organizational context and needs. Contact Assoc. Prof. Rajesh Gupta (rajesh.gupta@giar.my) for corporate training inquiries.",
   },
   {
     question: "Does GIAR conduct research?",
