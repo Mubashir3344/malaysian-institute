@@ -1,33 +1,33 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import researchAppliedScience from "@/assets/research-applied-science.jpg";
-import researchBusiness from "@/assets/research-business.jpg";
-import researchDataScience from "@/assets/research-data-science.jpg";
-import teamCollaboration from "@/assets/team-collaboration.jpg";
+import professionalPrograms from "@/assets/professional-programs.svg";
+import researchCollaboration from "@/assets/research-collaboration.svg";
+import academicIntegrity from "@/assets/academic-integrity.svg";
+import partnerships from "@/assets/partnerships.svg";
 
 const services = [
   {
     title: "Professional Programs",
     description: "Executive and postgraduate programs in digital transformation, data ethics, research methodology, and institutional leadership",
-    image: researchDataScience,
+    image: professionalPrograms,
     link: "/programs",
   },
   {
     title: "Research & Collaboration",
     description: "Advanced research projects, collaborative partnerships, and research capacity building across our four specialized centers",
-    image: researchAppliedScience,
+    image: researchCollaboration,
     link: "/research",
   },
   {
     title: "Academic Integrity",
     description: "Research ethics, academic integrity policies, and institutional compliance support grounded in Malaysian standards",
-    image: teamCollaboration,
+    image: academicIntegrity,
     link: "/ethics",
   },
   {
     title: "Institutional Partnerships",
     description: "Strategic partnerships with universities, corporations, and organizations for sustained research and professional development",
-    image: researchBusiness,
+    image: partnerships,
     link: "/partnerships",
   },
 ];

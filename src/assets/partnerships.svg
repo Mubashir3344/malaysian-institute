@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f2f6fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e6f0f8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bgGradient4)"/>
+  
+  <!-- Handshake -->
+  <g transform="translate(100, 180)">
+    <path d="M 30 60 Q 40 40 60 40 Q 80 40 90 60" stroke="#00a8e8" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M 30 60 Q 40 80 60 90 Q 80 100 90 80" stroke="#0066cc" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="25" cy="55" r="8" fill="#00a8e8"/>
+    <circle cx="95" cy="65" r="8" fill="#0066cc"/>
+  </g>
+  
+  <!-- Organizational chart -->
+  <g transform="translate(480, 150)">
+    <!-- Top -->
+    <circle cx="50" cy="20" r="12" fill="url(#accentGradient4)"/>
+    <!-- Middle layer -->
+    <circle cx="30" cy="60" r="10" fill="#e8eef7" stroke="#00a8e8" stroke-width="2"/>
+    <circle cx="70" cy="60" r="10" fill="#e8eef7" stroke="#0066cc" stroke-width="2"/>
+    <!-- Bottom layer -->
+    <circle cx="15" cy="100" r="8" fill="#e8eef7" stroke="#00a8e8" stroke-width="1.5"/>
+    <circle cx="45" cy="100" r="8" fill="#e8eef7" stroke="#00a8e8" stroke-width="1.5"/>
+    <circle cx="70" cy="100" r="8" fill="#e8eef7" stroke="#0066cc" stroke-width="1.5"/>
+    <!-- Connection lines -->
+    <line x1="50" y1="32" x2="30" y2="50" stroke="#00a8e8" stroke-width="2"/>
+    <line x1="50" y1="32" x2="70" y2="50" stroke="#0066cc" stroke-width="2"/>
+    <line x1="30" y1="70" x2="15" y2="92" stroke="#00a8e8" stroke-width="1.5"/>
+    <line x1="30" y1="70" x2="45" y2="92" stroke="#00a8e8" stroke-width="1.5"/>
+    <line x1="70" y1="70" x2="70" y2="92" stroke="#0066cc" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Puzzle pieces (integration) -->
+  <g transform="translate(880, 190)">
+    <!-- Piece 1 -->
+    <rect x="0" y="0" width="35" height="35" fill="#e8eef7" stroke="#00a8e8" stroke-width="2" rx="2"/>
+    <circle cx="35" cy="17" r="6" fill="#f5f7fa" stroke="#00a8e8" stroke-width="1"/>
+    <!-- Piece 2 -->
+    <rect x="35" y="0" width="35" height="35" fill="#e8eef7" stroke="#0066cc" stroke-width="2" rx="2"/>
+    <circle cx="35" cy="17" r="6" fill="white" stroke="#0066cc" stroke-width="1"/>
+    <!-- Piece 3 -->
+    <rect x="0" y="35" width="35" height="35" fill="#e8eef7" stroke="#00a8e8" stroke-width="2" rx="2"/>
+    <circle cx="17" cy="35" r="6" fill="white" stroke="#00a8e8" stroke-width="1"/>
+    <!-- Piece 4 -->
+    <rect x="35" y="35" width="35" height="35" fill="#e8eef7" stroke="#0066cc" stroke-width="2" rx="2"/>
+    <circle cx="17" cy="35" r="6" fill="white" stroke="#0066cc" stroke-width="1"/>
+  </g>
+  
+  <!-- Left decorative -->
+  <g transform="translate(150, 550)">
+    <path d="M 0 0 L 30 20 L 0 40" stroke="#00a8e8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 50 0 L 80 20 L 50 40" stroke="#0066cc" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Right decorative -->
+  <g transform="translate(950, 550)">
+    <circle cx="20" cy="20" r="15" fill="none" stroke="#00a8e8" stroke-width="3"/>
+    <circle cx="50" cy="20" r="15" fill="none" stroke="#0066cc" stroke-width="3"/>
+    <line x1="35" y1="20" x2="35" y2="20" stroke="#00a8e8" stroke-width="2"/>
+  </g>
+</svg>

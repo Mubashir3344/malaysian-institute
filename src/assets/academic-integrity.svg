@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f9fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8f2f9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bgGradient3)"/>
+  
+  <!-- Code brackets -->
+  <g transform="translate(120, 200)">
+    <path d="M 80 40 L 40 80 L 80 120" stroke="#00a8e8" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 40 40 L 80 80 L 40 120" stroke="#0066cc" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Shield / Security -->
+  <g transform="translate(500, 150)">
+    <path d="M 50 20 L 80 40 L 80 90 Q 80 120 50 140 Q 20 120 20 90 L 20 40 Z" fill="url(#accentGradient3)" opacity="0.8"/>
+    <path d="M 35 80 L 45 90 L 65 70" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Ethics compass -->
+  <g transform="translate(900, 180)">
+    <circle cx="60" cy="60" r="50" fill="none" stroke="#e8eef7" stroke-width="3"/>
+    <circle cx="60" cy="60" r="40" fill="none" stroke="#00a8e8" stroke-width="2"/>
+    <circle cx="60" cy="60" r="8" fill="#0066cc"/>
+    <!-- N, E, S, W markers -->
+    <line x1="60" y1="10" x2="60" y2="25" stroke="#00a8e8" stroke-width="3"/>
+    <line x1="110" y1="60" x2="95" y2="60" stroke="#0066cc" stroke-width="3"/>
+    <line x1="60" y1="110" x2="60" y2="95" stroke="#00a8e8" stroke-width="3"/>
+    <line x1="10" y1="60" x2="25" y2="60" stroke="#0066cc" stroke-width="3"/>
+  </g>
+  
+  <!-- Left side data elements -->
+  <g transform="translate(150, 500)">
+    <rect x="0" y="0" width="15" height="60" fill="#00a8e8"/>
+    <rect x="20" y="15" width="15" height="45" fill="#0066cc"/>
+    <rect x="40" y="5" width="15" height="55" fill="#00d9ff"/>
+    <rect x="60" y="20" width="15" height="40" fill="#00a8e8"/>
+  </g>
+  
+  <!-- Right side connections -->
+  <g transform="translate(920, 520)">
+    <circle cx="0" cy="0" r="20" fill="#e8eef7" stroke="#00a8e8" stroke-width="2"/>
+    <circle cx="45" cy="30" r="20" fill="#e8eef7" stroke="#0066cc" stroke-width="2"/>
+    <circle cx="45" cy="-30" r="20" fill="#e8eef7" stroke="#00a8e8" stroke-width="2"/>
+    <line x1="15" y1="0" x2="30" y2="15" stroke="#00a8e8" stroke-width="2"/>
+    <line x1="15" y1="0" x2="30" y2="-15" stroke="#0066cc" stroke-width="2"/>
+  </g>
+</svg>
