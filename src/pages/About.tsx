@@ -107,9 +107,9 @@ const About = () => {
                 <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
                   Our Mission
                 </h2>
-                <p clfoster excellence in applied research and professional development 
-                  acrassName="text-2xl md:text-3xl font-serif leading-relaxed">
-                  To oss Southeast Asia, grounded in ethical principles and aligned 
+                <p className="text-2xl md:text-3xl font-serif leading-relaxed">
+                  To foster excellence in applied research and professional development 
+                  across Southeast Asia, grounded in ethical principles and aligned 
                   with Malaysian Qualifications Agency (MQA) standards.
                 </p>
               </div>
@@ -124,7 +124,7 @@ const About = () => {
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   All our offerings are developed by experienced researchers and reviewed 
-                  against MQA standards to ensonal best practicesby our Academic Standards Committee to ensure relevance 
+                  against MQA standards by our Academic Standards Committee to ensure relevance 
                   and rigor.
                 </p>
               </div>
@@ -141,7 +141,13 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
               {teamMembers.map((member) => (
                 <div key={member.name}>
-                  <div className="aspect-square bg-foreground/5 border border-border mb-6" />
+                  <div className="aspect-square bg-gradient-to-br from-foreground/20 to-foreground/5 border border-border mb-6 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-4xl font-serif text-foreground/40 mb-2">
+                        {member.name.charAt(0)}{member.name.split(' ').pop()?.charAt(0)}
+                      </div>
+                    </div>
+                  </div>
                   <h3 className="text-xl font-serif mb-1">{member.name}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{member.role}</p>
                   <p className="text-sm text-muted-foreground">{member.bio}</p>
