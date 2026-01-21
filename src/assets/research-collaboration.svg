@@ -1,68 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
   <defs>
-    <linearGradient id="collab_bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:1" />
+    <linearGradient id="rc_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafafa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e5e5e5;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="collab_accent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#7b1fa2;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6a1b9a;stop-opacity:1" />
-    </linearGradient>
+    <filter id="rc_shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="4" dy="6" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
   </defs>
   
-  <rect width="1200" height="800" fill="url(#collab_bg)"/>
+  <rect width="1200" height="800" fill="url(#rc_bg)"/>
   
-  <!-- Left - Person 1 -->
-  <circle cx="250" cy="200" r="35" fill="#81c784"/>
-  <ellipse cx="250" cy="150" rx="30" ry="35" fill="#a5d6a7"/>
-  <rect x="230" y="240" width="40" height="60" fill="#64b5f6" rx="8"/>
-  <rect x="210" y="300" width="20" height="50" fill="#42a5f5"/>
-  <rect x="260" y="300" width="20" height="50" fill="#42a5f5"/>
+  <!-- Conference table -->
+  <ellipse cx="600" cy="450" rx="450" ry="120" fill="#d2691e" opacity="0.7" filter="url(#rc_shadow)"/>
+  <ellipse cx="600" cy="440" rx="450" ry="120" fill="#a0522d"/>
   
-  <!-- Right - Person 2 -->
-  <circle cx="950" cy="200" r="35" fill="#ef5350"/>
-  <ellipse cx="950" cy="150" rx="30" ry="35" fill="#ef9a9a"/>
-  <rect x="930" y="240" width="40" height="60" fill="#64b5f6" rx="8"/>
-  <rect x="910" y="300" width="20" height="50" fill="#42a5f5"/>
-  <rect x="960" y="300" width="20" height="50" fill="#42a5f5"/>
+  <!-- Chairs around table -->
+  <!-- Left chairs -->
+  <ellipse cx="200" cy="450" rx="50" ry="60" fill="#455a64"/>
+  <rect x="185" y="480" width="30" height="80" fill="#37474f"/>
   
-  <!-- Center - Connection nodes -->
-  <circle cx="600" cy="400" r="20" fill="url(#collab_accent)"/>
-  <circle cx="450" cy="350" r="15" fill="#e1bee7" stroke="#7b1fa2" stroke-width="2"/>
-  <circle cx="750" cy="350" r="15" fill="#e1bee7" stroke="#7b1fa2" stroke-width="2"/>
-  <circle cx="450" cy="450" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
-  <circle cx="750" cy="450" r="15" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+  <ellipse cx="300" cy="380" rx="50" ry="60" fill="#455a64"/>
+  <rect x="285" y="410" width="30" height="80" fill="#37474f"/>
   
-  <!-- Connection lines -->
-  <line x1="600" y1="400" x2="450" y2="350" stroke="#7b1fa2" stroke-width="3" opacity="0.6"/>
-  <line x1="600" y1="400" x2="750" y2="350" stroke="#7b1fa2" stroke-width="3" opacity="0.6"/>
-  <line x1="600" y1="400" x2="450" y2="450" stroke="#6a1b9a" stroke-width="3" opacity="0.6"/>
-  <line x1="600" y1="400" x2="750" y2="450" stroke="#6a1b9a" stroke-width="3" opacity="0.6"/>
+  <!-- Right chairs -->
+  <ellipse cx="1000" cy="450" rx="50" ry="60" fill="#455a64"/>
+  <rect x="985" y="480" width="30" height="80" fill="#37474f"/>
   
-  <!-- Handshake overlay -->
-  <g transform="translate(550, 150)">
-    <path d="M 30 40 L 50 30 L 50 50" fill="#4caf50" opacity="0.8"/>
-    <path d="M 70 40 L 50 30 L 50 50" fill="#81c784" opacity="0.8"/>
+  <ellipse cx="900" cy="380" rx="50" ry="60" fill="#455a64"/>
+  <rect x="885" y="410" width="30" height="80" fill="#37474f"/>
+  
+  <!-- People silhouettes -->
+  <!-- Left side people -->
+  <ellipse cx="200" cy="360" rx="30" ry="40" fill="#1a237e"/>
+  <circle cx="200" cy="305" r="15" fill="#bf360c"/>
+  
+  <ellipse cx="300" cy="280" rx="30" ry="40" fill="#1a237e"/>
+  <circle cx="300" cy="225" r="15" fill="#c62828"/>
+  
+  <!-- Right side people -->
+  <ellipse cx="1000" cy="360" rx="30" ry="40" fill="#0d47a1"/>
+  <circle cx="1000" cy="305" r="15" fill="#d84315"/>
+  
+  <ellipse cx="900" cy="280" rx="30" ry="40" fill="#0d47a1"/>
+  <circle cx="900" cy="225" r="15" fill="#e65100"/>
+  
+  <!-- Center - Laptop on table -->
+  <rect x="500" y="350" width="200" height="140" fill="#eceff1" stroke="#455a64" stroke-width="2" rx="4"/>
+  <rect x="510" y="360" width="180" height="100" fill="#90caf9"/>
+  <line x1="510" y1="370" x2="690" y2="370" stroke="#1565c0" stroke-width="2"/>
+  <circle cx="530" cy="390" r="4" fill="#1565c0"/>
+  <rect x="545" y="385" width="50" height="8" fill="#1565c0"/>
+  
+  <!-- Charts on screen -->
+  <g transform="translate(520, 405)">
+    <rect x="0" y="20" width="12" height="40" fill="#ef5350" opacity="0.8"/>
+    <rect x="18" y="10" width="12" height="50" fill="#42a5f5" opacity="0.8"/>
+    <rect x="36" y="5" width="12" height="55" fill="#66bb6a" opacity="0.8"/>
+    <rect x="54" y="15" width="12" height="45" fill="#ab47bc" opacity="0.8"/>
   </g>
   
-  <!-- Document/Research papers -->
-  <g transform="translate(150, 500)">
-    <rect x="0" y="0" width="60" height="80" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="2"/>
-    <line x1="5" y1="15" x2="55" y2="15" stroke="#f57f17" stroke-width="1"/>
-    <line x1="5" y1="25" x2="55" y2="25" stroke="#f57f17" stroke-width="1"/>
-    <line x1="5" y1="35" x2="40" y2="35" stroke="#f57f17" stroke-width="1"/>
-    <rect x="70" y="10" width="60" height="80" fill="#ffeb3b" stroke="#fbc02d" stroke-width="2" rx="2"/>
-    <line x1="75" y1="25" x2="125" y2="25" stroke="#fbc02d" stroke-width="1"/>
-    <line x1="75" y1="35" x2="125" y2="35" stroke="#fbc02d" stroke-width="1"/>
-    <line x1="75" y1="45" x2="110" y2="45" stroke="#fbc02d" stroke-width="1"/>
+  <!-- Documents/Papers on table -->
+  <g transform="translate(250, 480)">
+    <rect x="0" y="0" width="60" height="80" fill="#fff59d" stroke="#f57f17" stroke-width="1" opacity="0.9"/>
+    <line x1="5" y1="15" x2="55" y2="15" stroke="#f57f17" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="25" x2="55" y2="25" stroke="#f57f17" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="35" x2="45" y2="35" stroke="#f57f17" stroke-width="1" opacity="0.5"/>
   </g>
   
-  <!-- Right side - Chart representation -->
-  <g transform="translate(950, 500)">
-    <rect x="0" y="80" width="20" height="70" fill="#7b1fa2" opacity="0.7"/>
-    <rect x="25" y="60" width="20" height="90" fill="#9c27b0" opacity="0.7"/>
-    <rect x="50" y="40" width="20" height="110" fill="#ba68c8" opacity="0.7"/>
-    <rect x="75" y="55" width="20" height="95" fill="#7b1fa2" opacity="0.7"/>
-    <line x1="0" y1="150" x2="95" y2="150" stroke="#e1bee7" stroke-width="2"/>
+  <g transform="translate(950, 480)">
+    <rect x="0" y="0" width="60" height="80" fill="#fff59d" stroke="#f57f17" stroke-width="1" opacity="0.9"/>
+    <line x1="5" y1="15" x2="55" y2="15" stroke="#f57f17" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="25" x2="55" y2="25" stroke="#f57f17" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="35" x2="45" y2="35" stroke="#f57f17" stroke-width="1" opacity="0.5"/>
   </g>
 </svg>

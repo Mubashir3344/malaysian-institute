@@ -1,60 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
   <defs>
-    <linearGradient id="prof_bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    <linearGradient id="pp_sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="prof_accent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0288d1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0277bd;stop-opacity:1" />
+    <linearGradient id="pp_wall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="pp_shadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#pp_wall)"/>
+  
+  <!-- Modern office building exterior -->
+  <rect x="50" y="200" width="1100" height="500" fill="url(#pp_wall)" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <!-- Glass windows - reflective -->
+  <defs>
+    <linearGradient id="pp_glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:0.8" />
     </linearGradient>
   </defs>
   
-  <rect width="1200" height="800" fill="url(#prof_bg)"/>
-  
-  <!-- Desk/Workspace -->
-  <rect x="100" y="450" width="1000" height="30" fill="#8d6e63" rx="5"/>
-  
-  <!-- Laptop screen -->
-  <rect x="300" y="150" width="600" height="400" fill="#f5f5f5" stroke="#424242" stroke-width="3" rx="8"/>
-  
-  <!-- Screen content - dashboard elements -->
-  <rect x="320" y="170" width="560" height="40" fill="#e0e0e0" rx="4"/>
-  <circle cx="360" cy="190" r="8" fill="#0288d1"/>
-  <rect x="380" y="185" width="100" height="10" fill="#0288d1" rx="2"/>
-  
-  <!-- Charts in laptop -->
-  <g transform="translate(340, 230)">
-    <rect x="0" y="60" width="30" height="60" fill="#0288d1" opacity="0.8"/>
-    <rect x="40" y="40" width="30" height="80" fill="#0277bd" opacity="0.8"/>
-    <rect x="80" y="30" width="30" height="90" fill="#01579b" opacity="0.8"/>
-    <rect x="120" y="50" width="30" height="70" fill="#0288d1" opacity="0.8"/>
-    <line x1="0" y1="120" x2="150" y2="120" stroke="#bdbdbd" stroke-width="1"/>
+  <!-- Windows grid -->
+  <g id="windows">
+    <rect x="100" y="250" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="250" y="250" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="400" y="250" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="550" y="250" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="700" y="250" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="850" y="250" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="1000" y="250" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    
+    <!-- Second row -->
+    <rect x="100" y="400" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="250" y="400" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="400" y="400" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="550" y="400" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="700" y="400" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="850" y="400" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
+    <rect x="1000" y="400" width="120" height="120" fill="url(#pp_glass)" stroke="#64748b" stroke-width="1" filter="url(#pp_shadow)"/>
   </g>
   
-  <!-- Notebook -->
-  <rect x="200" y="350" width="150" height="100" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="4"/>
-  <line x1="210" y1="370" x2="340" y2="370" stroke="#f57f17" stroke-width="1"/>
-  <line x1="210" y1="385" x2="340" y2="385" stroke="#f57f17" stroke-width="1"/>
-  <line x1="210" y1="400" x2="340" y2="400" stroke="#f57f17" stroke-width="1"/>
-  <line x1="210" y1="415" x2="340" y2="415" stroke="#f57f17" stroke-width="1"/>
+  <!-- Entrance -->
+  <rect x="500" y="550" width="200" height="150" fill="#1e293b" stroke="#0f172a" stroke-width="2" rx="8"/>
+  <circle cx="550" cy="630" r="8" fill="#fbbf24"/>
+  <circle cx="650" cy="630" r="8" fill="#fbbf24"/>
   
-  <!-- Cup of coffee -->
-  <circle cx="950" cy="380" r="25" fill="url(#prof_accent)"/>
-  <ellipse cx="950" cy="355" rx="25" ry="15" fill="#8d6e63" opacity="0.7"/>
-  <path d="M 975 370 Q 990 375 985 390" stroke="#8d6e63" stroke-width="3" fill="none"/>
+  <!-- Sky reflection -->
+  <rect x="50" y="50" width="1100" height="150" fill="url(#pp_sky)" opacity="0.4"/>
   
-  <!-- Stack of books -->
-  <g transform="translate(100, 250)">
-    <rect x="0" y="120" width="80" height="30" fill="#c62828" rx="2"/>
-    <rect x="0" y="85" width="80" height="30" fill="#e53935" rx="2"/>
-    <rect x="0" y="50" width="80" height="30" fill="#f44336" rx="2"/>
-    <rect x="0" y="15" width="80" height="30" fill="#ef5350" rx="2"/>
-  </g>
-  
-  <!-- Pen holder -->
-  <rect x="950" y="310" width="40" height="60" fill="#795548" rx="4"/>
-  <line x1="960" y1="320" x2="960" y2="360" stroke="#ffeb3b" stroke-width="3" stroke-linecap="round"/>
-  <line x1="970" y1="315" x2="970" y2="360" stroke="#03a9f4" stroke-width="3" stroke-linecap="round"/>
-  <line x1="980" y1="318" x2="980" y2="360" stroke="#4caf50" stroke-width="3" stroke-linecap="round"/>
+  <!-- Accent elements - people silhouettes in windows -->
+  <circle cx="160" cy="310" r="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="310" cy="310" r="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="460" cy="460" r="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="610" cy="460" r="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="760" cy="310" r="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="910" cy="460" r="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="1060" cy="310" r="8" fill="#1e293b" opacity="0.6"/>
 </svg>

@@ -1,78 +1,96 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
   <defs>
-    <linearGradient id="integrity_bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:1" />
+    <linearGradient id="ai_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafafa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8eaf6;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="integrity_accent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f57c00;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#e65100;stop-opacity:1" />
-    </linearGradient>
+    <filter id="ai_shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
   </defs>
   
-  <rect width="1200" height="800" fill="url(#integrity_bg)"/>
+  <rect width="1200" height="800" fill="url(#ai_bg)"/>
   
   <!-- Left - Audit checklist -->
-  <g transform="translate(100, 150)">
-    <rect x="0" y="0" width="250" height="280" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="4"/>
-    <text x="15" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="#f57f17">Audit Checklist</text>
-    <!-- Checkboxes -->
-    <rect x="15" y="50" width="15" height="15" fill="#4caf50" rx="2"/>
-    <text x="35" y="62" font-family="Arial" font-size="14" fill="#212121">Research Ethics</text>
-    <rect x="15" y="80" width="15" height="15" fill="#4caf50" rx="2"/>
-    <text x="35" y="92" font-family="Arial" font-size="14" fill="#212121">Data Integrity</text>
-    <rect x="15" y="110" width="15" height="15" fill="#4caf50" rx="2"/>
-    <text x="35" y="122" font-family="Arial" font-size="14" fill="#212121">Governance</text>
-    <rect x="15" y="140" width="15" height="15" fill="#9e9e9e" rx="2"/>
-    <text x="35" y="152" font-family="Arial" font-size="14" fill="#616161">Compliance</text>
-    <rect x="15" y="170" width="15" height="15" fill="#9e9e9e" rx="2"/>
-    <text x="35" y="182" font-family="Arial" font-size="14" fill="#616161">Audit Trail</text>
+  
+  <!-- Left side - Security Shield -->
+  <g transform="translate(200, 200)" filter="url(#ai_shadow)">
+    <path d="M 80 20 L 160 60 L 160 140 Q 80 180 80 180 Q 0 140 0 60 L 80 20" fill="#1565c0" stroke="#0d47a1" stroke-width="2"/>
+    <!-- Shield badge/checkmark -->
+    <circle cx="80" cy="100" r="35" fill="#4caf50"/>
+    <path d="M 65 95 L 75 110 L 95 80" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   
-  <!-- Center - Shield/Certificate -->
-  <g transform="translate(520, 180)">
-    <path d="M 60 20 L 100 40 L 100 110 Q 100 150 60 170 Q 20 150 20 110 L 20 40 Z" fill="url(#integrity_accent)" stroke="#e65100" stroke-width="2"/>
-    <text x="40" y="120" font-family="Arial" font-size="40" font-weight="bold" fill="white">✓</text>
-  </g>
-  
-  <!-- Right - Book/Standards -->
-  <g transform="translate(850, 150)">
-    <rect x="0" y="0" width="100" height="150" fill="#e3f2fd" stroke="#0277bd" stroke-width="2" rx="4"/>
-    <text x="10" y="25" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b">MQA Standards</text>
-    <line x1="5" y1="35" x2="95" y2="35" stroke="#0277bd" stroke-width="1"/>
-    <line x1="10" y1="50" x2="90" y2="50" stroke="#0277bd" stroke-width="1"/>
-    <line x1="10" y1="60" x2="90" y2="60" stroke="#0277bd" stroke-width="1"/>
-    <line x1="10" y1="70" x2="75" y2="70" stroke="#0277bd" stroke-width="1"/>
-    <line x1="10" y1="85" x2="90" y2="85" stroke="#0277bd" stroke-width="1"/>
-    <line x1="10" y1="95" x2="90" y2="95" stroke="#0277bd" stroke-width="1"/>
-    <line x1="10" y1="105" x2="80" y2="105" stroke="#0277bd" stroke-width="1"/>
-  </g>
-  
-  <!-- Bottom - People compliance -->
-  <g transform="translate(150, 500)">
-    <!-- Person 1 -->
-    <circle cx="30" cy="30" r="20" fill="#4caf50"/>
-    <rect x="15" y="50" width="30" height="40" fill="#81c784"/>
-    <text x="20" y="145" font-family="Arial" font-size="12" fill="#212121">Certified</text>
+  <!-- Center-Left - Audit Checklist -->
+  <g transform="translate(150, 400)" filter="url(#ai_shadow)">
+    <!-- Clipboard -->
+    <rect x="0" y="0" width="180" height="250" fill="#f5f5f5" stroke="#424242" stroke-width="2" rx="8"/>
+    <rect x="5" y="5" width="170" height="40" fill="#d32f2f"/>
+    <text x="90" y="32" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">AUDIT CHECKLIST</text>
     
-    <!-- Person 2 -->
-    <circle cx="100" cy="30" r="20" fill="#4caf50"/>
-    <rect x="85" y="50" width="30" height="40" fill="#81c784"/>
-    <text x="85" y="145" font-family="Arial" font-size="12" fill="#212121">Compliant</text>
+    <!-- Checkmarks -->
+    <g transform="translate(15, 60)">
+      <circle cx="8" cy="8" r="8" fill="#4caf50"/>
+      <path d="M 4 8 L 7 11 L 12 4" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="25" y1="8" x2="155" y2="8" stroke="#757575" stroke-width="2"/>
+    </g>
     
-    <!-- Person 3 -->
-    <circle cx="170" cy="30" r="20" fill="#ff9800"/>
-    <rect x="155" y="50" width="30" height="40" fill="#ffb74d"/>
-    <text x="150" y="145" font-family="Arial" font-size="12" fill="#212121">Pending</text>
+    <g transform="translate(15, 85)">
+      <circle cx="8" cy="8" r="8" fill="#4caf50"/>
+      <path d="M 4 8 L 7 11 L 12 4" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="25" y1="8" x2="155" y2="8" stroke="#757575" stroke-width="2"/>
+    </g>
+    
+    <g transform="translate(15, 110)">
+      <circle cx="8" cy="8" r="8" fill="#4caf50"/>
+      <path d="M 4 8 L 7 11 L 12 4" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="25" y1="8" x2="155" y2="8" stroke="#757575" stroke-width="2"/>
+    </g>
+    
+    <g transform="translate(15, 135)">
+      <circle cx="8" cy="8" r="8" fill="#ff9800"/>
+      <line x1="4" y1="8" x2="12" y2="8" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="25" y1="8" x2="155" y2="8" stroke="#bdbdbd" stroke-width="2" stroke-dasharray="3,3"/>
+    </g>
+    
+    <g transform="translate(15, 160)">
+      <circle cx="8" cy="8" r="8" fill="#2196f3"/>
+      <circle cx="8" cy="8" r="2" fill="#ffffff"/>
+      <line x1="25" y1="8" x2="155" y2="8" stroke="#bdbdbd" stroke-width="2" stroke-dasharray="3,3"/>
+    </g>
   </g>
   
-  <!-- Right - Laws/Regulations -->
-  <g transform="translate(920, 520)">
-    <rect x="0" y="0" width="80" height="30" fill="#f44336" opacity="0.8"/>
-    <text x="5" y="22" font-family="Arial" font-size="12" font-weight="bold" fill="white">Law 1</text>
-    <rect x="0" y="40" width="80" height="30" fill="#f57c00" opacity="0.8"/>
-    <text x="5" y="62" font-family="Arial" font-size="12" font-weight="bold" fill="white">Law 2</text>
-    <rect x="0" y="80" width="80" height="30" fill="#fbc02d" opacity="0.8"/>
-    <text x="5" y="102" font-family="Arial" font-size="12" font-weight="bold" fill="white">Law 3</text>
+  <!-- Right side - Compliance Badges/Certifications -->
+  <g transform="translate(750, 250)" filter="url(#ai_shadow)">
+    <!-- Certification Badge 1 -->
+    <circle cx="80" cy="50" r="50" fill="#fff3e0" stroke="#e65100" stroke-width="3"/>
+    <text x="80" y="35" font-size="12" fill="#e65100" text-anchor="middle" font-weight="bold">ISO</text>
+    <text x="80" y="55" font-size="14" fill="#e65100" text-anchor="middle" font-weight="bold">9001</text>
+    <path d="M 50 50 L 65 65 L 110 20" fill="none" stroke="#e65100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(900, 250)" filter="url(#ai_shadow)">
+    <!-- Certification Badge 2 -->
+    <circle cx="80" cy="50" r="50" fill="#e3f2fd" stroke="#1565c0" stroke-width="3"/>
+    <text x="80" y="30" font-size="12" fill="#1565c0" text-anchor="middle" font-weight="bold">CERTIFIED</text>
+    <text x="80" y="55" font-size="14" fill="#1565c0" text-anchor="middle" font-weight="bold">SECURE</text>
+    <path d="M 50 50 L 65 65 L 110 20" fill="none" stroke="#1565c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  </g>
+  
+  <!-- Bottom - Compliance Document -->
+  <g transform="translate(500, 580)" filter="url(#ai_shadow)">
+    <rect x="0" y="0" width="200" height="120" fill="#ffffff" stroke="#3f51b5" stroke-width="2" rx="4"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="200" height="30" fill="#3f51b5" rx="4"/>
+    <text x="100" y="20" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">COMPLIANCE REPORT</text>
+    <!-- Content -->
+    <line x1="10" y1="45" x2="190" y2="45" stroke="#3f51b5" stroke-width="1.5" opacity="0.5"/>
+    <line x1="10" y1="55" x2="150" y2="55" stroke="#3f51b5" stroke-width="1.5" opacity="0.5"/>
+    <line x1="10" y1="65" x2="180" y2="65" stroke="#3f51b5" stroke-width="1.5" opacity="0.5"/>
+    <line x1="10" y1="75" x2="160" y2="75" stroke="#3f51b5" stroke-width="1.5" opacity="0.5"/>
+    <line x1="10" y1="85" x2="190" y2="85" stroke="#3f51b5" stroke-width="1.5" opacity="0.5"/>
+    <!-- Verified stamp -->
+    <circle cx="170" cy="100" r="12" fill="none" stroke="#4caf50" stroke-width="2" opacity="0.7"/>
+    <text x="170" y="105" font-size="10" fill="#4caf50" text-anchor="middle" font-weight="bold">✓</text>
   </g>
 </svg>
